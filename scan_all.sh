@@ -10,10 +10,10 @@ do
     cd $src_dir
 
     # step 1: parse codebase
-    # docker run --rm -it -p 5678:5678 -v "$(pwd)":/app/output -v "$src_dir":$src_dir alecmaly/sa-tool python3 /app/1_extract_w_lsp.py -d $src_dir -l $language -it 5
+    docker run --rm -it -p 5678:5678 -v "$(pwd)":/app/output -v "$src_dir":$src_dir alecmaly/sa-tool python3 /app/1_extract_w_lsp.py -d $src_dir -l $language -it 5
     
-    # # step 2: build callstacks
-    # docker run --rm -it -v $(pwd):/app/output sa-tool python3 /app/2_build_callstacks.py
+    # step 2: build callstacks
+    docker run --rm -it -v $(pwd):/app/output alecmaly/sa-tool python3 /app/2_build_callstacks.py
 
     # Step 3: move files to .vscode for extension
     mkdir -p .vscode/ext-static-analysis/graphs

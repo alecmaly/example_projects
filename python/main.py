@@ -68,5 +68,12 @@ async def recursive_function(n: int):
     await asyncio.sleep(0.1)  # Simulate some async work
     await recursive_function(n - 1)
 
+def test():
+    print("test")
+    test2()
+
+def test2():
+    print("test2")
+
 if __name__ == "__main__":
     asyncio.run(main())

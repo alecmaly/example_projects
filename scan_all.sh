@@ -7,10 +7,10 @@ for language in "${language_folders[@]}"
 do
     echo "Scanning $language"
     src_dir="$BASE_DIR$language"
-    cd $src_dir
+    # cd $src_dir
 
     # step 1: parse codebase
-    docker run --rm -it -p 5678:5678 -v "$(pwd)":/app/output -v "$src_dir":$src_dir alecmaly/sa-tool python3 /app/1_extract_w_lsp.py -d $src_dir -l $language -it 5
+    docker run --rm -it -p 5678:5678 -v "$(pwd)":/app/output -v "$src_dir":$src_dir alecmaly/sa-tool python3 /app/1_extract_w_lsp.py -d $src_dir -l $language -it 5 -a
     
     # step 2: build callstacks
     docker run --rm -it -v $(pwd):/app/output alecmaly/sa-tool python3 /app/2_build_callstacks.py

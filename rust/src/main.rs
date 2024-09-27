@@ -9,6 +9,20 @@ use futures::stream::{self, StreamExt};
 
 static GLOBAL_VAR: &str = "I'm global in main";
 
+
+fn test() {
+    let local_var = "I'm local to test";
+    println!("{}", GLOBAL_VAR);
+    println!("{}", local_var);
+    test2();
+}
+
+fn test2() {
+    let local_var = "I'm local to test2";
+    println!("{}", GLOBAL_VAR);
+    println!("{}", local_var);
+}
+
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let local_var = "I'm local to main";

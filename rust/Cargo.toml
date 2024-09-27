@@ -1,0 +1,15 @@
+[package]
+name = "rs-example"
+version = "0.0.1"
+authors = ["test"]
+autobins = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = "1.40.0"
+
+
+[[bin]]
+name = "rust_example"
+path = "src/main.rs"

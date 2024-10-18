@@ -57,6 +57,11 @@ def recursive_function(n)
   return if n <= 0
   puts "Recursion level: #{n}"
   recursive_function(n - 1)
+  another_func()
+end
+
+def another_func()
+  puts "I'm another func"
 end
 
 main

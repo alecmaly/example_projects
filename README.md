@@ -4,7 +4,7 @@
 
 Broken
 - Ruby
-- Java
+<!-- - Java -->
 - Assembly (external functions?)
 
 
@@ -15,3 +15,6 @@ Broken
     - `--disable-outgoing-calls`
 
     
+- java
+    - `--disable-selectionRange`
+        - 

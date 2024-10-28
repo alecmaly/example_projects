@@ -2,6 +2,7 @@ local module1 = require("module1")
 local module2 = require("module2")
 local os = require("os")  -- Added standard library import
 
+
 GlobalVar = "I'm global in main"
 
 local function main()

@@ -3,6 +3,8 @@
 
 static char* header2_global = "I'm global in header2";
 
+static void internal_function(void);
+
 void function1(void) {
     printf("This is function1 from source2.c\n");
     printf("Accessing constant: %s\n", HEADER2_CONSTANT);

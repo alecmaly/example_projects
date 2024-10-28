@@ -1,1 +1,1 @@
-[{"jsonrpc": "2.0", "id": "e46587f7-1f2c-4916-b7ce-d6d050f5b683", "method": "textDocument/prepareTypeHierarchy", "params": {"textDocument": {"uri": "file:///home/alec/Desktop/example_projects/go/package1/file1.go"}, "position": {"line": 4, "character": 5}}}]
+[]

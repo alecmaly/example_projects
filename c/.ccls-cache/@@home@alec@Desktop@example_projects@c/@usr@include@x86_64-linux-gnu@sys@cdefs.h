@@ -27,8 +27,8 @@
 /* The GNU libc does not support any K&R compilers or the traditional mode
    of ISO C compilers anymore.  Check for some of the combinations not
    supported anymore.  */
-#if defined __GNUC__ && !defined __STDC__ && !defined __cplusplus
-# error "You need a ISO C or C++ conforming compiler to use the glibc headers"
+#if defined __GNUC__ && !defined __STDC__
+# error "You need a ISO C conforming compiler to use the glibc headers"
 #endif
 
 /* Some user header file might have defined this before.  */
@@ -152,7 +152,6 @@
 # define __glibc_objsize(__o) __bos (__o)
 #endif
 
-#if __USE_FORTIFY_LEVEL > 0
 /* Compile time conditions to choose between the regular, _chk and _chk_warn
    variants.  These conditions should get evaluated to constant and optimized
    away.  */
@@ -163,13 +162,13 @@
    || (__builtin_constant_p (__l) && (__l) > 0))
 
 /* Length is known to be safe at compile time if the __L * __S <= __OBJSZ
-   condition can be folded to a constant and if it is true, or unknown (-1) */
+   condition can be folded to a constant and if it is true.  The -1 check is
+   redundant because since it implies that __glibc_safe_len_cond is true.  */
 #define __glibc_safe_or_unknown_len(__l, __s, __osz) \
-  ((__builtin_constant_p (__osz) && (__osz) == (__SIZE_TYPE__) -1)	      \
-   || (__glibc_unsigned_or_positive (__l)				      \
-       && __builtin_constant_p (__glibc_safe_len_cond ((__SIZE_TYPE__) (__l), \
-						       (__s), (__osz)))	      \
-       && __glibc_safe_len_cond ((__SIZE_TYPE__) (__l), (__s), (__osz))))
+  (__glibc_unsigned_or_positive (__l)					      \
+   && __builtin_constant_p (__glibc_safe_len_cond ((__SIZE_TYPE__) (__l),     \
+						   __s, __osz))		      \
+   && __glibc_safe_len_cond ((__SIZE_TYPE__) (__l), __s, __osz))
 
 /* Conversely, we know at compile time that the length is unsafe if the
    __L * __S <= __OBJSZ condition can be folded to a constant and if it is
@@ -188,7 +187,7 @@
    ? __ ## f ## _alias (__VA_ARGS__)					      \
    : (__glibc_unsafe_len (__l, __s, __osz)				      \
       ? __ ## f ## _chk_warn (__VA_ARGS__, __osz)			      \
-      : __ ## f ## _chk (__VA_ARGS__, __osz)))
+      : __ ## f ## _chk (__VA_ARGS__, __osz)))			      \
 
 /* Fortify function f, where object size argument passed to f is the number of
    elements and not total size.  */
@@ -198,8 +197,7 @@
    ? __ ## f ## _alias (__VA_ARGS__)					      \
    : (__glibc_unsafe_len (__l, __s, __osz)				      \
       ? __ ## f ## _chk_warn (__VA_ARGS__, (__osz) / (__s))		      \
-      : __ ## f ## _chk (__VA_ARGS__, (__osz) / (__s))))
-#endif
+      : __ ## f ## _chk (__VA_ARGS__, (__osz) / (__s))))		      \
 
 #if __GNUC_PREREQ (4,3)
 # define __warnattr(msg) __attribute__((__warning__ (msg)))

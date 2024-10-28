@@ -4,6 +4,8 @@
 
 static char* header1_global = "I'm global in header1";
 
+static void private_method(struct1_t* s);
+
 struct1_t* create_struct1() {
     struct1_t* s = malloc(sizeof(struct1_t));
     s->private_var = "I'm private";

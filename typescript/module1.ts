@@ -1,3 +1,10 @@
+const {
+    decodeURI,
+    encodeURI,
+    ObjectKeys
+  } = primordials;
+  
+  
 export class Class1 {
     private privateVar: string;
     static staticVar: string = "I'm a static variable in Class1";
@@ -7,6 +14,7 @@ export class Class1 {
     }
 
     public async method1Async(): Promise<void> {
+        encodeURI("https://www.google.com");
         console.log("This is method1 from Class1");
         await this.privateMethodAsync();
     }
@@ -15,6 +23,7 @@ export class Class1 {
         console.log("This is a private method in Class1");
         console.log(`Private var: ${this.privateVar}`);
         console.log(`Static var: ${Class1.staticVar}`);
+        ObjectKeys({});
         await new Promise(resolve => setTimeout(resolve, 100)); // Simulate some async work
     }
 }

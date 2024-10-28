@@ -1,14 +1,24 @@
 import { BaseClass, DerivedClass } from './module1';
 import { function1, MODULE2_CONSTANT, exportedVar } from './module2';
 
+const {
+    decodeURI,
+    encodeURI,
+    ObjectKeys
+} = primordials;
+  
+  
+
 const globalVar: string = "I'm global in main";
+const globalVarX: number = 3;
+const globalVarY: number = 7;
 
 async function main(): Promise<void> {
     const localVar: string = "I'm local to main";
     console.log(globalVar);
     console.log(localVar);
     console.log(`Imported constant: ${MODULE2_CONSTANT}`);
-
+    ObjectKeys({});
     const baseObj = new BaseClass();
     const derivedObj = new DerivedClass();
 
@@ -18,7 +28,7 @@ async function main(): Promise<void> {
 
     await function1();
     await recursiveFunctionAsync(5);
-
+    console.log(globalVarX + globalVarY);
     // Accessing module-level variables
     console.log(`BaseClass static var: ${BaseClass.staticVar}`);
     console.log(`Module2 exported var: ${exportedVar}`);
@@ -61,6 +71,7 @@ class NumberProcessor<T extends number | bigint> {
 // Async iterator
 async function* generateSequence(): AsyncIterableIterator<number> {
     for (let i = 0; i < 5; i++) {
+        encodeURI("https://www.google.com");
         await new Promise(resolve => setTimeout(resolve, 100));
         yield i;
     }

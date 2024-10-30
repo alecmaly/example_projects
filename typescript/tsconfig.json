@@ -1,0 +1,17 @@
+{
+    "include": ["*.ts"],
+    "files": [
+      "./typings/primordials.d.ts"
+    ],
+    "compilerOptions": {
+      "allowJs": true,
+      "checkJs": false,
+      "noEmit": true,
+      "lib": ["ESNext", "DOM"],
+      "target": "ESNext",
+      "module": "CommonJS",
+      "baseUrl": ".",
+      "paths": {
+      }
+    }
+  }

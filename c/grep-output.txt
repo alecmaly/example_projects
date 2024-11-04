@@ -1,0 +1,201 @@
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@pthreadtypes.h:1:1:/* Declaration of common pthread types for all architectures.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@pthreadtypes.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@pthreadtypes.h:30:1:/* Data structures for mutex handling.  The structure of the attribute
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@pthreadtypes.h:39:1:/* Data structure for condition variable handling.  The structure of
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@pthreadtypes.h:48:1:/* Keys for thread-specific data */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@pthreadtypes.h:84:1:/* Data structure for reader-writer lock variable handling.  The
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@stdlib-float.h:1:1:/* Floating-point inline functions for stdlib.h.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@stdlib-float.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@types@__fpos_t.h:8:1:   C++ mangled names for functions taking fpos_t arguments.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@waitstatus.h:1:1:/* Definitions of status bits for `wait' et al.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@waitstatus.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@waitstatus.h:55:1:/* Macros for constructing status values.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@endian.h:1:1:/* Endian macros for string.h functions
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@endian.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@endian.h:22:1:/* Definitions for byte order, according to significance of bytes,
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@endian.h:26:1:   in the least significant byte, and then writing down one digit for
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@endian.h:34:1:/* This file defines `__BYTE_ORDER' for the particular machine.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@endian.h:37:1:/* Some machines may need to use a different endianness for floating point
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn-common.h:2:1:   definitions are appropriate for all platforms.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn-common.h:14:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn-common.h:27:1:   It defines the following macros for each _FloatN and _FloatNx type,
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn-common.h:29:1:   in bits/floatn.h, are appropriate for all glibc configurations.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn-common.h:32:1:   floating-point type with the right format for this type, and this
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn-common.h:33:1:   glibc includes corresponding *fN or *fNx interfaces for it.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn-common.h:42:1:   choices for) float, double, long double, _Float16, _Float32,
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn-common.h:43:1:   _Float64, _Float128, _Float32x, _Float64x, _Float128x for this
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn-common.h:45:1:   rather than once per type are present for this type.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn-common.h:51:1:   support for a type meeting the requirements for _Float128x.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn-common.h:68:1:   for the purposes of __builtin_types_compatible_p and _Generic).  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn-common.h:79:1:   literal suffixes exist since GCC 7, for C only.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn-common.h:82:1:/* No corresponding suffix available for this type.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn-common.h:195:1:/* The remaining of this file provides support for older compilers.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn-common.h:232:1:   type, _Float64 must be a typedef for long double, not for
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@waitflags.h:1:1:/* Definitions of flag bits for `waitpid' et al.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@waitflags.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@waitflags.h:38:1:#define __WALL		0x40000000 /* Wait for any child.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@waitflags.h:39:1:#define __WCLONE	0x80000000 /* Wait for cloned process.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@endian.h:12:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@types@sigset_t.h:6:1:/* A set of signals to be blocked, unblocked, or waited for.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@long-double.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@lib@llvm-14@lib@clang@14.0.6@include@stddef.h:4:120: * See https://llvm.org/LICENSE.txt for license information.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@time64.h:1:1:/* bits/time64.h -- underlying types for __time64_t.  Generic version.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@time64.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@alloca.h:12:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@byteswap.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@atomic_wide_counter.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@thread-shared-types.h:1:1:/* Common threading primitives definitions for both POSIX and C11.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@thread-shared-types.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@thread-shared-types.h:35:1:   The additional macro defines any constraint for the lock alignment
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@thread-shared-types.h:38:1:   __LOCK_ALIGNMENT - for internal lock/futex usage.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@thread-shared-types.h:40:1:   Same idea but for the once locking primitive:
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@thread-shared-types.h:42:1:   __ONCE_ALIGNMENT - for pthread_once_t/once_flag definition.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@thread-shared-types.h:70:1:   2. __LOCK_ALIGNMENT for any extra attribute for internal lock used with
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@thread-shared-types.h:73:1:   3. The macro __PTHREAD_MUTEX_INITIALIZER used for static initialization.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@thread-shared-types.h:86:1:   2. The macro __PTHREAD_RWLOCK_INITIALIZER used for static initialization.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@typesizes.h:1:1:/* bits/typesizes.h -- underlying types for *_t.  Linux/x86-64 version.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@typesizes.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@typesizes.h:26:1:/* See <bits/types.h> for the meaning of these macros.  This file exists so
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@typesizes.h:79:1:   for all ABI purposes, even if possibly expressed as different base types
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@typesizes.h:80:1:   for C type-checking purposes.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@typesizes.h:83:1:/* Same for ino_t and ino64_t.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@typesizes.h:86:1:/* And for __rlim_t and __rlim64_t.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@typesizes.h:89:1:/* And for fsblkcnt_t, fsblkcnt64_t, fsfilcnt_t and fsfilcnt64_t.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@typesizes.h:92:1:/* And for getitimer, setitimer and rusage  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@select.h:12:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@select.h:26:1:  do {									      \
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@select.h:29:1:    for (__i = 0; __i < sizeof (fd_set) / sizeof (__fd_mask); ++__i)	      \
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@select.h:31:1:  } while (0)
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features-time64.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@libc-header-start.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@libc-header-start.h:50:1:   __STDC_WANT_IEC_60559_BFP_EXT__), while a few features from TS
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:28:1:   of ISO C compilers anymore.  Check for some of the combinations not
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:40:1:   even though they do not need to evaluate the right-hand side of the &&.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:41:1:   Similarly for __has_builtin, etc.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:76:1:   the -fexceptions options for C code as well.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:211:1:/* Support for flexible arrays.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:237:1:   macro, in order to support compilers that can do this some other
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:238:1:   way.  When compilers don't support asm-names at all, we have to do
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:240:1:   semantics, but it's the best we can do).
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:271:1:   the '__attribute__' syntax.  All of the ways we use this do fine if
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:272:1:   they are omitted for compilers that don't understand it.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:278:1:   for functions was introduced.  We don't want to use it unconditionally
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:305:1:   for functions was introduced.  We don't want to use it unconditionally
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:327:1:   for functions was introduced.  We don't want to use it unconditionally
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:356:1:   for functions was introduced.  We don't want to use it unconditionally
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:358:1:   If several `format_arg' attributes are given for the same function, in
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:368:1:   attribute for functions was introduced.  We don't want to use it
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:440:1:   or __GNUC_GNU_INLINE is not a good enough check for gcc because gcc versions
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:444:1:   clang++ identifies itself as gcc-4.2, but has support for GNU inlining
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:445:1:   semantics, that can be checked for by using the __GNUC_STDC_INLINE_ and
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:630:1:   intended for use in preprocessor macros.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:643:1:   since version 4.9.  Previous versions do not provide generic
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:645:1:   when in -std=c11 mode.  Thus, we must check for !defined __GNUC__
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:646:1:   when testing __STDC_VERSION__ for generic selection support.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@cdefs.h:669:1:   size hints for such functions.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@uintn-identity.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:12:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:46:1:			Single Unix conformance is wanted, to 600 for the
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:47:1:			sixth revision, to 700 for the seventh revision.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:49:1:   _LARGEFILE_SOURCE	Some more functions for correct standard I/O.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:50:1:   _LARGEFILE64_SOURCE	Additional functionality from LFS for large files.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:100:1:   __USE_ATFILE		Define *at interfaces and AT_* constants for them.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:108:1:   only for compatibility.  All new code should use the other symbols
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:109:1:   to test for features.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:155:1:   for it.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:165:90:   Note: only works for GCC 2.0 and later, because __GNUC_MINOR__ was
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:174:1:/* Similarly for clang.  Features added to GCC after version 4.2 may
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:188:1:/* _BSD_SOURCE and _SVID_SOURCE are deprecated aliases for
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:189:1:   _DEFAULT_SOURCE.  If _DEFAULT_SOURCE is present we do not
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:268:1:/* This is to enable compatibility for ISO C++17.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:272:1:/* This is to enable compatibility for ISO C++11.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:273:1:   Check the temporary macro for now, too.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:311:1:   for many years.  We now treat them as compatibility synonyms for
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:313:1:   comprehensive support for multithreaded code.  Using them never
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:432:148:   safely.  It has been removed from ISO C11 and ISO C++14.  Note: for
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:442:1:   specifiers %as, %aS, and %a[...] that allocate a buffer for the
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:469:1:   __GLIBC_MINOR__ now (see below) when you want to test for a specific
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@features.h:476:1:   these macros to test for features in specific releases.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@pthreadtypes-arch.h:12:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@pthreadtypes-arch.h:51:1:/* Extra attributes for the cleanup functions.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@struct_mutex.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@types@__fpos64_t.h:8:1:   C++ mangled names for functions taking fpos_t and/or fpos64_t
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@struct_rwlock.h:14:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@select.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@select.h:58:1:/* fd_set for select and pselect.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@select.h:84:1:/* Access macros for `fd_set'.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@select.h:93:1:/* Check the first NFDS descriptors each in READFDS (if not NULL) for read
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@select.h:94:1:   readiness, in WRITEFDS (if not NULL) for write readiness, and in EXCEPTFDS
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@select.h:95:1:   (if not NULL) for exceptional conditions.  If TIMEOUT is not NULL, time out
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@select.h:97:1:   descriptors, or -1 for errors.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn.h:26:1:   glibc includes corresponding *f128 interfaces for it.  The required
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn.h:28:1:   support, for x86_64 and x86.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn.h:46:1:   floating-point type with the right format for _Float64x, and this
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn.h:47:1:   glibc includes corresponding *f64x interfaces for it.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn.h:72:1:/* Add a typedef for older GCC compilers which don't natively support
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn.h:81:1:/* The remaining of this file provides support for older compilers.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@floatn.h:94:1:/* Older GCC has only a subset of built-in functions for _Float128 on
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@snap@ccls@117@usr@lib@llvm-15@lib@clang@15.0.7@include@stdarg.h:4:134: * See https://llvm.org/LICENSE.txt for license information.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdlib.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdlib.h:55:1:/* _FloatN API tests for enablement.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdlib.h:90:1:/* We define these the same for all machines.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdlib.h:123:1:/* Likewise for `float' and `long double' sizes of floating-point numbers.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdlib.h:132:1:/* Likewise for '_FloatN' and '_FloatNx'.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdlib.h:397:1:/* These are the functions that actually do things.  The `random', `srandom',
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdlib.h:488:1:/* Data structure for communication with thread safe versions.  This
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdlib.h:496:1:    unsigned short int __init;	/* Flag for initializing.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdlib.h:572:1:   block large enough for NMEMB elements of SIZE bytes each.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdlib.h:683:1:   for Fortran 77) requires this function.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdlib.h:702:1:   Returns a file descriptor open on the file for reading and writing,
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdlib.h:826:1:/* Shorthand for type of comparison functions.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdlib.h:839:1:/* Do a binary search for KEY in BASE, which consists of NMEMB elements
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdlib.h:872:1:/* GCC may have built-ins for these someday.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdlib.h:888:1:   valid only until another call to the same function.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdlib.h:1007:1:   The returned storage is good until the next call to this function.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdlib.h:1031:1:/* Return the index into the active-logins file (utmp) for
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@gnu@stubs-64.h:2:1:   It defines a symbol `__stub_FUNCTION' for each function
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@types@struct_timespec.h:9:1:/* POSIX.1b structure for a time value.  This is like a `struct timeval' but
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@stdio_lim.h:12:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@gnu@stubs.h:3:1:   based on the architecture being compiled for.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@snap@ccls@117@usr@lib@llvm-15@lib@clang@15.0.7@include@stddef.h:4:134: * See https://llvm.org/LICENSE.txt for license information.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@types.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@types.h:81:1:   macros for each of the OS types we define below.  The definitions
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@types.h:82:1:   of those macros must use the following macros for underlying types.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@types.h:83:1:   We define __S<SIZE>_TYPE and __U<SIZE>_TYPE for the signed and unsigned
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@types.h:97:1:   This matters for (somewhat) portably writing printf/scanf formats for
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@types.h:157:1:__STD_TYPE __RLIM_T_TYPE __rlim_t;	/* Type for resource measurement.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@types.h:158:1:__STD_TYPE __RLIM64_T_TYPE __rlim64_t;	/* Type for resource measurement (LFS).  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@types.h:159:1:__STD_TYPE __ID_T_TYPE __id_t;		/* General type for IDs.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@types.h:214:1:   It is not currently necessary for this to be machine-specific.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@types.h:218:1:   narrow only for consistency with the old way of widening too-narrow
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@types@struct_FILE.h:12:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@types@struct_FILE.h:47:1:   C++ mangled names for functions taking FILE* arguments.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@timesize.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdc-predef.h:12:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@bits@stdint-intn.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdio.h:13:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdio.h:92:1:/* The possibilities for the third argument to `setvbuf'.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdio.h:107:1:/* The possibilities for the third argument to `fseek'.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdio.h:119:1:/* Default path prefix for `tempnam' and `tmpnam'.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdio.h:137:1:/* Maximum length of printf output for a NaN.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdio.h:163:1:/* Flags for renameat2.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdio.h:216:1:   if it is not NULL.  The directory to put this file in is searched for
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdio.h:220:1:   P_tmpdir is tried and finally "/tmp".  The storage for the filename
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdio.h:254:1:/* Open a file and create a new stream for it.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdio.h:299:1:   and uses the given functions for input and output.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdio.h:330:1:   If BUF is not NULL, use N bytes of it for buffering;
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdio.h:337:1:   Else make it use SIZE bytes of BUF for buffering.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdio.h:475:1:/* Same redirection as above for the v*scanf family.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdio.h:726:1:   more adequate interface for the two functions above which deal with
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdio.h:785:1:/* Clear the error and EOF indicators for STREAM.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdio.h:787:1:/* Return the EOF indicator for STREAM.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdio.h:789:1:/* Return the error indicator for STREAM.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdio.h:808:1:/* Return the system file descriptor for STREAM.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdio.h:869:1:/* Try to acquire ownership of STREAM but do not block if it is not
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@stdio.h:873:1:/* Relinquish the ownership granted for STREAM.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@lib@llvm-14@lib@clang@14.0.6@include@stdarg.h:4:120: * See https://llvm.org/LICENSE.txt for license information.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@types.h:12:1:   Lesser General Public License for more details.
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@types.h:147:1:/* Old compatibility names for C types.  */
+./.ccls-cache/@@home@alec@Desktop@example_projects@c/@usr@include@x86_64-linux-gnu@sys@types.h:178:1:/* It also defines `fd_set' and the FD_* macros for `select'.  */

@@ -28,13 +28,19 @@ do
     src_dir=`pwd` && docker run --rm -it -v $(pwd):/app/output -v "$src_dir":"$src_dir" alecmaly/sa-tool semgrep scan --exclude sg-rules --json --config auto --json-output=semgrep.json # --config ../sg-rules  # removing custom rules to increase speed
     src_dir=`pwd` && docker run --rm -it -v $(pwd):/app/output -v "$src_dir":"$src_dir" alecmaly/sa-tool python3 /app/semgrep-to-detector-results.py -b "$src_dir" 
 
+    # rust's was very large
+    rm grep-output.txt
+
     ## Grep to Detectors:
             # Example: adding if and loops to detectors
-    grep -rnEI --exclude-dir={.vscode,.git,node_modules} "\bif\b" . | awk -F: '{print $1 ":" $2 ":" index($0, $4) ":" substr($0, index($0, $3))}' > grep-output.txt
+    grep -rnEI --exclude-dir={.vscode,.git,node_modules,.json} "\bif\b" . | awk -F: '{print $1 ":" $2 ":" index($0, $4) ":" substr($0, index($0, $3))}' > grep-output.txt
     src_dir=`pwd` && docker run --rm -it -v $(pwd):/app/output -v "$src_dir":"$src_dir" alecmaly/sa-tool python3 /app/grep-to-detector-results.py -b "$src_dir" -c "grep-if statements" -a
 
-    grep -rnEI --exclude-dir={.vscode,.git,node_modules} "\b(while|for|until|do)\b" . | awk -F: '{print $1 ":" $2 ":" index($0, $4) ":" substr($0, index($0, $3))}' > grep-output.txt
+    grep -rnEI --exclude-dir={.vscode,.git,node_modules,.json} "\b(while|for|until|do)\b" . | awk -F: '{print $1 ":" $2 ":" index($0, $4) ":" substr($0, index($0, $3))}' > grep-output.txt
     src_dir=`pwd` && docker run --rm -it -v $(pwd):/app/output -v "$src_dir":"$src_dir" alecmaly/sa-tool python3 /app/grep-to-detector-results.py -b "$src_dir" -c "grep-loops" -a
 
     # code .
 done
+
+# docker image currently runs as root, may need to change ownership of files to user or possibly set `chmod 777 {}` if vs code extensions do not have permission to read files
+# sudo find . -exec chown $USER:$USER {} \;

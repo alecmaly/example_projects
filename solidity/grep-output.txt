@@ -1,0 +1,2 @@
+./Main.sol:71:1:        while (j != 0) {
+./Main.sol:77:1:        while (_i != 0) {

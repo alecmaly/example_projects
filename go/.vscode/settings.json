@@ -1,0 +1,9 @@
+{
+    "slither.solcPath": "",
+    "slither.hiddenDetectors": [
+        "grep-if statements"
+    ],
+    "slither.slitherTarget": ".",
+    "slither.slitherArgs": "--filter-paths \"asdfasdf|node_modules|mock|test/|sdfsdf\"",
+    "slither.slitherCmdPrefix": ""
+}

@@ -1,7 +1,4 @@
-./main.rb:11:40
-./main.rb:20:1
-./main.rb:25:34
-./module2.rb:1:1
-./module2.rb:2:1
-./module2.rb:6:1
-./module2.rb:13:1
+./main.rb:39:41:  BaseClass.define_method(:dynamic_method) do
+./main.rb:45:1:  fib = Fiber.new do
+./main.rb:47:1:    loop do
+./base_class.rb:19:1:    define_method(method_name) do

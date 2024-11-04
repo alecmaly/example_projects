@@ -1,5 +1,5 @@
 # clean up .json files to ensure we are not using old data
-find . -name "*.json" -type f ! -name launch.json ! -name tsconfig.json -delete
+find . -name "*.json" -type f ! -name launch.json ! -name tsconfig.json ! -path "*/_solidity-chainlink/*" ! -path "*/_vulnserver/*"  -delete
 
 # c# is broken (OmniSharp) 
 language_folders=(asm bash c go java kotlin lua php powershell python ruby rust solidity typescript)

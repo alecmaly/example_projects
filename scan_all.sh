@@ -1,5 +1,5 @@
 # clean up .json files to ensure we are not using old data
-find . -name "*.json" -type f ! -name launch.json -delete
+find . -name "*.json" -type f ! -name launch.json ! -name tsconfig.json -delete
 
 # c# is broken (OmniSharp) 
 language_folders=(asm bash c go java kotlin lua php powershell python ruby rust solidity typescript)
@@ -24,5 +24,17 @@ do
     mv ./scope_summaries_html.json ./.vscode/ext-static-analysis/scope_summaries_html.json
     mv ./inheritance_graph.json ./.vscode/ext-static-analysis/graphs/inheritance_graph.json
 
-    code .
+
+    src_dir=`pwd` && docker run --rm -it -v $(pwd):/app/output -v "$src_dir":"$src_dir" alecmaly/sa-tool semgrep scan --exclude sg-rules --json --config auto --json-output=semgrep.json # --config ../sg-rules  # removing custom rules to increase speed
+    src_dir=`pwd` && docker run --rm -it -v $(pwd):/app/output -v "$src_dir":"$src_dir" alecmaly/sa-tool python3 /app/semgrep-to-detector-results.py -b "$src_dir" 
+
+    ## Grep to Detectors:
+            # Example: adding if and loops to detectors
+    grep -rnEI --exclude-dir={.vscode,.git,node_modules} "\bif\b" . | awk -F: '{print $1 ":" $2 ":" index($0, $4) ":" substr($0, index($0, $3))}' > grep-output.txt
+    src_dir=`pwd` && docker run --rm -it -v $(pwd):/app/output -v "$src_dir":"$src_dir" alecmaly/sa-tool python3 /app/grep-to-detector-results.py -b "$src_dir" -c "grep-if statements" -a
+
+    grep -rnEI --exclude-dir={.vscode,.git,node_modules} "\b(while|for|until|do)\b" . | awk -F: '{print $1 ":" $2 ":" index($0, $4) ":" substr($0, index($0, $3))}' > grep-output.txt
+    src_dir=`pwd` && docker run --rm -it -v $(pwd):/app/output -v "$src_dir":"$src_dir" alecmaly/sa-tool python3 /app/grep-to-detector-results.py -b "$src_dir" -c "grep-loops" -a
+
+    # code .
 done

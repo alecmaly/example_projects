@@ -1,27 +1,27 @@
-'s_configs' in function pairs:
-	(r)(w) RMNHome.setCandidate | 🔀📰🎯💥🟢🔴❌ ['onlyOwner'] ['onlyOwner'] <-> (r) RMNHome.getCandidateDigest | 📰🎯💥🟢🟩 []
-	(r) CCIPHome.getCandidateDigest | 📰🎯💥🟢🟩 [] <-> (r)(w) CCIPHome.setCandidate | 🔀📰🎯💥🟢🔴 []
-'s_destChainConfigs' in function pairs:
-	(r)(r*)(w) OnRamp.forwardFromRouter | 📰🎯💥🟢🔴 [] <-> (r) FeeQuoter.processMessageArgs | 📰🎯💥🟢🟩 []
-	(r)(r*)(w) OnRamp.applyAllowlistUpdates | 📰🎯💥🟢🔴 [] <-> (r)(w) EnumerableSet._remove | 🔀 []
-	(r)(r*)(w) OnRamp.applyAllowlistUpdates | 📰🎯💥🟢🔴 [] <-> (r)(w) EnumerableSet._add | 🔀 []
-	(r) FeeQuoter._processPoolReturnData | 📰🎯🟢🟩 [] <-> (r)(r*)(w) OnRamp.forwardFromRouter | 📰🎯💥🟢🔴 [] <-> (r) FeeQuoter.processMessageArgs | 📰🎯💥🟢🟩 []
+'s_activeConfigIndex' in function pairs:
+	(r) RMNHome._getActiveIndex | 📰🎯🟢🟩 [] <-> (r)(w) RMNHome.promoteCandidateAndRevokeActive | 🔀📰🎯💥🟢🔴❌ ['onlyOwner'] ['onlyOwner']
+	(r) RMNHome._getCandidateIndex | 📰🎯🟢🟩 [] <-> (r)(w) RMNHome.promoteCandidateAndRevokeActive | 🔀📰🎯💥🟢🔴❌ ['onlyOwner'] ['onlyOwner']
+'s_remoteChainSelectors' in function pairs:
+	(r)(w) EnumerableSet._remove | 🔀 [] <-> (r)(r*) CCIPHome.applyChainConfigUpdates | 📰🎯💥🟢🔴❌ ['onlyOwner'] ['onlyOwner']
+	(r)(w) EnumerableSet._add | 🔀 [] <-> (r)(r*) CCIPHome.applyChainConfigUpdates | 📰🎯💥🟢🔴❌ ['onlyOwner'] ['onlyOwner']
 's_executionStates' in function pairs:
 	(r) OffRamp._getSequenceNumberBitmap | 📰🎯🟢🟩 [] <-> (w) OffRamp._setExecutionState | 📰🎯🟢🔴 []
+'s_destChainConfigs' in function pairs:
+	(r)(r*)(w) OnRamp.applyAllowlistUpdates | 📰🎯💥🟢🔴 [] <-> (r)(w) EnumerableSet._add | 🔀 []
+	(r)(r*)(w) OnRamp.applyAllowlistUpdates | 📰🎯💥🟢🔴 [] <-> (r)(w) EnumerableSet._remove | 🔀 []
+	(r) FeeQuoter.processMessageArgs | 📰🎯💥🟢🟩 [] <-> (r)(r*)(w) OnRamp.forwardFromRouter | 📰🎯💥🟢🔴 []
+	(r) FeeQuoter._processPoolReturnData | 📰🎯🟢🟩 [] <-> (r) FeeQuoter.processMessageArgs | 📰🎯💥🟢🟩 [] <-> (r)(r*)(w) OnRamp.forwardFromRouter | 📰🎯💥🟢🔴 []
 's_inboundNonces' in function pairs:
 	(r) NonceManager._getInboundNonce | 📰🎯🟢🟩 [] <-> (w) NonceManager.incrementInboundNonce | 🎯💥🔴❌ ['onlyAuthorizedCallers'] ['onlyAuthorizedCallers']
 's_outboundNonces' in function pairs:
 	(r) NonceManager._getOutboundNonce | 📰🎯🟢🟩 [] <-> (w) NonceManager.getIncrementedOutboundNonce | 🎯💥🔴❌ ['onlyAuthorizedCallers'] ['onlyAuthorizedCallers']
-'s_remoteChainSelectors' in function pairs:
-	(r)(r*) CCIPHome.applyChainConfigUpdates | 📰🎯💥🟢🔴❌ ['onlyOwner'] ['onlyOwner'] <-> (r)(w) EnumerableSet._add | 🔀 []
-	(r)(r*) CCIPHome.applyChainConfigUpdates | 📰🎯💥🟢🔴❌ ['onlyOwner'] ['onlyOwner'] <-> (r)(w) EnumerableSet._remove | 🔀 []
 's_activeConfigIndexes' in function pairs:
 	(r)(w) CCIPHome.promoteCandidateAndRevokeActive | 🔀📰🎯💥🟢🔴 [] <-> (r) CCIPHome._getCandidateIndex | 📰🎯🟢🟩 []
 	(r)(w) CCIPHome.promoteCandidateAndRevokeActive | 🔀📰🎯💥🟢🔴 [] <-> (r) CCIPHome._getActiveIndex | 📰🎯🟢🟩 []
-'s_activeConfigIndex' in function pairs:
-	(r)(w) RMNHome.promoteCandidateAndRevokeActive | 🔀📰🎯💥🟢🔴❌ ['onlyOwner'] ['onlyOwner'] <-> (r) RMNHome._getCandidateIndex | 📰🎯🟢🟩 []
-	(r) RMNHome._getActiveIndex | 📰🎯🟢🟩 [] <-> (r)(w) RMNHome.promoteCandidateAndRevokeActive | 🔀📰🎯💥🟢🔴❌ ['onlyOwner'] ['onlyOwner']
 's_ocrConfigs' in function pairs:
-	(r)(w) MultiOCR3Base._setOCR3Config | 🔀📰🎯🟢🔴 [] <-> (r) OffRamp._afterOCR3ConfigSet | 📰🎯🟢🔴 []
+	(r) OffRamp._afterOCR3ConfigSet | 📰🎯🟢🔴 [] <-> (r)(w) MultiOCR3Base._setOCR3Config | 🔀📰🎯🟢🔴 []
 's_rateLimitersByChainSelector' in function pairs:
 	(r) MultiAggregateRateLimiter._getTokenBucket | 📰🎯🟢🟩 [] <-> (r)(w) MultiAggregateRateLimiter.applyRateLimiterConfigUpdates | 📰🎯💥🟢🔴❌ ['onlyOwner'] ['onlyOwner']
+'s_configs' in function pairs:
+	(r)(w) RMNHome.setCandidate | 🔀📰🎯💥🟢🔴❌ ['onlyOwner'] ['onlyOwner'] <-> (r) RMNHome.getCandidateDigest | 📰🎯💥🟢🟩 []
+	(r)(w) CCIPHome.setCandidate | 🔀📰🎯💥🟢🔴 [] <-> (r) CCIPHome.getCandidateDigest | 📰🎯💥🟢🟩 []

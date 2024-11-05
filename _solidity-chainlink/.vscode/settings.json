@@ -1,0 +1,10 @@
+{
+    "wake.compiler.solc.remappings": [
+        "forge-std/=contracts/src/vendor/forge-std/src/"
+    ],
+    "slither.solcPath": "",
+    "slither.hiddenDetectors": [],
+    "slither.slitherTarget": ".",
+    "slither.slitherArgs": "--filter-paths \"asdfasdf|node_modules|mock|test/|sdfsdf\"",
+    "slither.slitherCmdPrefix": ""
+}

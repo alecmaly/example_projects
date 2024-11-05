@@ -1,6 +1,6 @@
-     45 remoteChainSelector] = 
+     46 remoteChainSelector] = 
      40 lastUpdated = 
-     38 messageId = 
+     37 messageId = 
      30 tokens = 
      26 _positions[value] = 
      23 _values[valueIndex] = 
@@ -16,17 +16,16 @@
       6 sourceChainSelector][merkleRoot] = 
       6 configDigest = 
       4 version = 
+      4 transmitters = 
       4 sourceToken] = 
+      4 signers = 
       3 pendingAdministrator = 
       3 display = 
       2 _values[key] = 
-      2 transmitters = 
       2 token] = 
-      2 signers = 
       2 router = 
       2 reentrancyGuardEntered = 
       2 onchainPublicKey] = 
-      2 nonce = 
       2 n = 
       2 isSignatureVerificationEnabled = 
       2 feeValueJuels,isOutOfOrderExecution,convertedExtraArgs,destExecDataPerToken) = 
@@ -44,6 +43,7 @@
       1 prevOffRamp = 
       1 outboundLaneBucket = 
       1 onRamp = 
+      1 nonce = 
       1 minSeqNr = 
       1 messageId] = 
       1 inboundLaneBucket = 

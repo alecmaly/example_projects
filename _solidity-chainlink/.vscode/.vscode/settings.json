@@ -1,5 +1,0 @@
-{
-    "wake.compiler.solc.remappings": [
-        "forge-std/=contracts/src/vendor/forge-std/src/"
-    ]
-}

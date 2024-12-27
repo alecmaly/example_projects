@@ -1,0 +1,1 @@
+[{"jsonrpc": "2.0", "id": "c5084900-2861-4ed6-b18d-886558ae6428", "method": "textDocument/definition", "params": {"textDocument": {"uri": "file:///usr/local/go/src/time/sleep.go"}, "position": {"line": 13, "character": 5}}}]

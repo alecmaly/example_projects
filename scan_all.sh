@@ -20,6 +20,7 @@ do
     # Step 3: move files to .vscode for extension
     mkdir -p .vscode/ext-static-analysis/graphs
     mv ./functions_html.json ./.vscode/ext-static-analysis/functions_html.json
+    mv ./decorations.json ./.vscode/ext-static-analysis/decorations.json
     mv ./callstacks.json ./.vscode/ext-static-analysis/callstacks.json
     mv ./scope_summaries_html.json ./.vscode/ext-static-analysis/scope_summaries_html.json
     mv ./inheritance_graph.json ./.vscode/ext-static-analysis/graphs/inheritance_graph.json

@@ -1,8 +1,8 @@
 # clean up .json files to ensure we are not using old data
 find . -name "*.json" -type f ! -name launch.json ! -name tsconfig.json ! -path "*/_solidity-chainlink/*" ! -path "*/_vulnserver/*"  -delete
 
-# c# is broken (OmniSharp) 
-language_folders=(asm bash c go java kotlin lua php powershell python ruby rust solidity typescript)
+language_folders=(asm bash csharp c go java kotlin lua php powershell python ruby rust solidity typescript)
+language_folders=(csharp)
 BASE_DIR="`pwd`/"
 
 for language in "${language_folders[@]}"
@@ -10,6 +10,11 @@ do
     echo "Scanning $language"
     src_dir="$BASE_DIR$language"
     cd $src_dir
+
+    # translate to csharp
+    if [ "$language" == "csharp" ]; then
+        language="c#"
+    fi
 
     # step 1: parse codebase
     docker run --rm -it -p 5678:5678 -v "$(pwd)":/app/output -v "$src_dir":$src_dir alecmaly/sa-tool python3 /app/1_extract_w_lsp.py -d $src_dir -l $language 

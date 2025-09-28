@@ -1,3 +1,0 @@
-./main.go:76:22:	for i := 0; i < 5; i++ {
-./main.go:84:24:	for num := range ch {
-./package1/file1.go:8:1:	// Simnet is a simulated network for very simple testing of individual binaries.

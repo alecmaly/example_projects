@@ -1,2 +1,0 @@
-./main.ts:45:1:    for await (const item of generateSequence()) {
-./main.ts:73:1:    for (let i = 0; i < 5; i++) {

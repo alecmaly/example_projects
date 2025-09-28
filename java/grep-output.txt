@@ -1,1 +1,0 @@
-./BaseClass.java:15:45:        for (T element : array) {

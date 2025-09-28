@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Remote Attach",
+            "type": "python",
+            "request": "attach",
+            "connect": {
+                "port": 5678 // Or any other chosen port
+            },
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}",
+                    "remoteRoot": "/path/to/your/remote/project" // Path to the project root on the remote machine
+                }
+            ],
+            "justMyCode": true // Set to false to debug library code as well
+        }
+    ]
+}

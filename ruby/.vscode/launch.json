@@ -10,7 +10,7 @@
         },
         "pathMappings": [
             {
-                "localRoot": "/home/alec/Desktop/slither-custom-tooling/genaric/lsp/src",
+                "localRoot": "/home/alec/Desktop/static-analysis-context-POC/genaric/lsp/src",
                 "remoteRoot": "/app"
             }
         ]

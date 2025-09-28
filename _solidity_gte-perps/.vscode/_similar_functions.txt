@@ -1,0 +1,585 @@
+(10) contains
+	(SLOC: 2) 📰🎯🟩 | contains,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/RedBlackTree.sol#41:5
+	(SLOC: 2) 🟩 | contains,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/DynamicArrayLib.sol#255:5
+	(SLOC: 2) 🟩 | contains,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/DynamicArrayLib.sol#839:5
+	(SLOC: 2) 🟩 | contains,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/DynamicArrayLib.sol#844:5
+	(SLOC: 2) 🟩 | contains,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/DynamicArrayLib.sol#849:5
+	(SLOC: 26) 📰🟢🟩 | contains,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/EnumerableSetLib.sol#155:5
+	(SLOC: 24) 📰🟢🟩 | contains,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/EnumerableSetLib.sol#184:5
+	(SLOC: 2) 📰🟩 | contains,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/EnumerableSetLib.sol#211:5
+	(SLOC: 2) 📰🟩 | contains,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/EnumerableSetLib.sol#216:5
+	(SLOC: 5) 📰🟩 | contains,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/EnumerableSetLib.sol#221:5
+(9) remove
+	(SLOC: 2) 📰🎯 | remove,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/RedBlackTree.sol#69:5
+	(SLOC: 51) 📰🟢 | remove,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/EnumerableSetLib.sol#371:5
+	(SLOC: 49) 📰🟢 | remove,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/EnumerableSetLib.sol#425:5
+	(SLOC: 2) 📰 | remove,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/EnumerableSetLib.sol#477:5
+	(SLOC: 2) 📰 | remove,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/EnumerableSetLib.sol#482:5
+	(SLOC: 8) 📰 | remove,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/EnumerableSetLib.sol#487:5
+	(SLOC: 3) 📰 | remove,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/RedBlackTreeLib.sol#204:5
+	(SLOC: 3)  | remove,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/RedBlackTreeLib.sol#222:5
+	(SLOC: 104) 📰🟢 | remove,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/RedBlackTreeLib.sol#547:13
+(8) onlySenderOrOperator
+	(SLOC: 3) 📰🎯🌈🟢 | onlySenderOrOperator,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#104:5
+	(SLOC: 3) 📰🎯🌈🟢 | onlySenderOrOperator,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#125:5
+	(SLOC: 3) 📰🎯🌈🟢 | onlySenderOrOperator,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/Launchpad.sol#143:5
+	(SLOC: 3) 🎯🌈 | onlySenderOrOperator,/home/ubuntu/2025-08-gte-perps/contracts/perps/PerpManager.sol#83:5
+	(SLOC: 10) 🎯🟩🌀 | onlySenderOrOperator,/home/ubuntu/2025-08-gte-perps/contracts/utils/types/OperatorHelperLib.sol#16:5
+	(SLOC: 8) 🎯🟩🌀 | onlySenderOrOperator,/home/ubuntu/2025-08-gte-perps/contracts/utils/types/OperatorHelperLib.sol#29:5
+	(SLOC: 10) 📰🎯🟩 | onlySenderOrOperator,/home/ubuntu/2025-08-gte-perps/contracts/utils/types/OperatorHelperLib.sol#40:5
+	(SLOC: 8) 📰🎯🟩 | onlySenderOrOperator,/home/ubuntu/2025-08-gte-perps/contracts/utils/types/OperatorHelperLib.sol#53:5
+(7) setMaxLimitsPerTx
+	(SLOC: 0) 🎯💥 | setMaxLimitsPerTx,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#132:5
+	(SLOC: 2) 🎯💥❌ ['onlyManager'] | setMaxLimitsPerTx,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#295:5
+	(SLOC: 0) 🎯💥 | setMaxLimitsPerTx,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOBManager.sol#40:5
+	(SLOC: 2) 📰🎯💥🟢🌀❌ ['onlyOwnerOrRoles(uint256)'] | setMaxLimitsPerTx,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOBManager.sol#268:5
+	(SLOC: 6) 📰🎯 | setMaxLimitsPerTx,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#500:5
+	(SLOC: 10) 📰🎯💥❌ ['onlyAdmin'] | setMaxLimitsPerTx,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/AdminPanel.sol#594:5
+	(SLOC: 4) 📰🎯 | setMaxLimitsPerTx,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Book.sol#328:5
+(7) setMinLimitOrderAmountInBase
+	(SLOC: 0) 🎯💥 | setMinLimitOrderAmountInBase,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#134:5
+	(SLOC: 2) 🎯💥❌ ['onlyManager'] | setMinLimitOrderAmountInBase,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#307:5
+	(SLOC: 0) 🎯💥 | setMinLimitOrderAmountInBase,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOBManager.sol#43:5
+	(SLOC: 5) 📰🎯💥🟢🌀❌ ['onlyOwnerOrRoles(uint256)'] | setMinLimitOrderAmountInBase,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOBManager.sol#231:5
+	(SLOC: 6) 📰🎯 | setMinLimitOrderAmountInBase,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#516:5
+	(SLOC: 10) 📰🎯💥❌ ['onlyAdmin'] | setMinLimitOrderAmountInBase,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/AdminPanel.sol#606:5
+	(SLOC: 4) 📰🎯 | setMinLimitOrderAmountInBase,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Book.sol#334:5
+(7) init
+	(SLOC: 14) 🔀📰🎯 | init,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#534:5
+	(SLOC: 0) 🎯💥 | init,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/IBondingCurveMinimal.sol#7:5
+	(SLOC: 4) 🎯💥❌ ['onlyLaunchpad'] | init,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/SimpleBondingCurve.sol#63:5
+	(SLOC: 18) 🔀📰🎯 | init,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/CLOBLib.sol#111:5
+	(SLOC: 7) 🔀📰🎯 | init,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/FundingRateEngine.sol#34:5
+	(SLOC: 13) 🔀📰🎯 | init,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Market.sol#99:5
+	(SLOC: 10) 🔀📰🎯 | init,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Market.sol#114:5
+(6) deposit
+	(SLOC: 0) 🎯💥 | deposit,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#24:5
+	(SLOC: 7) 🎯💥❌ ['onlySenderOrOperator(address,SpotOperatorRoles)'] | deposit,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#180:5
+	(SLOC: 4) 💥 | deposit,/home/ubuntu/2025-08-gte-perps/lib/solady/src/tokens/ERC4626.sol#376:5
+	(SLOC: 5) 🎯💥❌ ['onlySenderOrOperator(address,PerpsOperatorRoles)'] | deposit,/home/ubuntu/2025-08-gte-perps/contracts/perps/PerpManager.sol#97:5
+	(SLOC: 4) 🎯 | deposit,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/InsuranceFund.sol#50:5
+	(SLOC: 2) 💥💲 | deposit,/home/ubuntu/2025-08-gte-perps/lib/solady/src/tokens/WETH.sol#37:5
+(6) withdraw
+	(SLOC: 0) 🎯💥 | withdraw,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#25:5
+	(SLOC: 7) 🎯💥❌ ['onlySenderOrOperator(address,SpotOperatorRoles)'] | withdraw,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#211:5
+	(SLOC: 8) 💥 | withdraw,/home/ubuntu/2025-08-gte-perps/lib/solady/src/tokens/ERC4626.sol#409:5
+	(SLOC: 5) 🎯💥❌ ['onlySenderOrOperator(address,PerpsOperatorRoles)'] | withdraw,/home/ubuntu/2025-08-gte-perps/contracts/perps/PerpManager.sol#104:5
+	(SLOC: 5) 🎯 | withdraw,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/InsuranceFund.sol#43:5
+	(SLOC: 10) 💥 | withdraw,/home/ubuntu/2025-08-gte-perps/lib/solady/src/tokens/WETH.sol#42:5
+(6) placeOrder
+	(SLOC: 0) 🎯💥 | placeOrder,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#72:5
+	(SLOC: 20) 📰🎯💥❌ ['onlySenderOrOperator(address,SpotOperatorRoles)'] | placeOrder,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#351:5
+	(SLOC: 7) 🎯💥❌ ['onlySenderOrOperator(address,PerpsOperatorRoles)', 'onlyActiveProtocol'] | placeOrder,/home/ubuntu/2025-08-gte-perps/contracts/perps/PerpManager.sol#304:5
+	(SLOC: 27) 📰🎯 | placeOrder,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/CLOBLib.sol#137:5
+	(SLOC: 36) 📰🎯 | placeOrder,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/ClearingHouse.sol#108:5
+	(SLOC: 20) 📰🎯❌ ['onlyActiveMarket(bytes32)'] | placeOrder,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Market.sol#130:5
+(6) setTickSize
+	(SLOC: 0) 🎯💥 | setTickSize,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#133:5
+	(SLOC: 2) 🎯💥❌ ['onlyManager'] | setTickSize,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#301:5
+	(SLOC: 0) 🎯💥 | setTickSize,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOBManager.sol#41:5
+	(SLOC: 2) 📰🎯💥🟢🌀❌ ['onlyOwnerOrRoles(uint256)'] | setTickSize,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOBManager.sol#221:5
+	(SLOC: 6) 📰🎯 | setTickSize,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#508:5
+	(SLOC: 11) 📰🎯💥❌ ['onlyAdmin'] | setTickSize,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/AdminPanel.sol#618:5
+(5) getOrdersPaginated
+	(SLOC: 3) 🎯💥🟩 | getOrdersPaginated,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#121:5
+	(SLOC: 3) 🎯💥🟩 | getOrdersPaginated,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#126:5
+	(SLOC: 12) 📰🎯💥🟩 | getOrdersPaginated,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#260:5
+	(SLOC: 9) 📰🎯💥🟩 | getOrdersPaginated,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#275:5
+	(SLOC: 28) 📰🎯🟩 | getOrdersPaginated,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#225:5
+(5) setLotSizeInBase
+	(SLOC: 0) 🎯💥 | setLotSizeInBase,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#131:5
+	(SLOC: 2) 🎯💥❌ ['onlyManager'] | setLotSizeInBase,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#313:5
+	(SLOC: 0) 🎯💥 | setLotSizeInBase,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOBManager.sol#42:5
+	(SLOC: 2) 📰🎯💥🟢🌀❌ ['onlyOwnerOrRoles(uint256)'] | setLotSizeInBase,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOBManager.sol#226:5
+	(SLOC: 7) 📰🎯 | setLotSizeInBase,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#524:5
+(5) totalSupply
+	(SLOC: 0) 🎯💥🟩 | totalSupply,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/IBondingCurveMinimal.sol#23:5
+	(SLOC: 2) 📰🎯💥🟢🟩 | totalSupply,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/SimpleBondingCurve.sol#124:5
+	(SLOC: 5) 📰💱💥🟢🟩 | totalSupply,/home/ubuntu/2025-08-gte-perps/lib/solady/src/tokens/ERC20.sol#147:5
+	(SLOC: 0) 💱💥🟩 | totalSupply,/home/ubuntu/2025-08-gte-perps/lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol#27:5
+	(SLOC: 12) 🟩 | totalSupply,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/SafeTransferLib.sol#404:5
+(5) name
+	(SLOC: 0) 💱💥🟩 | name,/home/ubuntu/2025-08-gte-perps/lib/solady/src/tokens/ERC20.sol#132:5
+	(SLOC: 2) 📰💱🎯💥🟢🟩 | name,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/LaunchToken.sol#71:5
+	(SLOC: 2) 💱🎯💥🟩 | name,/home/ubuntu/2025-08-gte-perps/contracts/perps/GTL.sol#85:5
+	(SLOC: 0) 💱💥🟩 | name,/home/ubuntu/2025-08-gte-perps/lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol#15:5
+	(SLOC: 2) 💱💥🟩 | name,/home/ubuntu/2025-08-gte-perps/lib/solady/src/tokens/WETH.sol#23:5
+(5) symbol
+	(SLOC: 0) 💱💥🟩 | symbol,/home/ubuntu/2025-08-gte-perps/lib/solady/src/tokens/ERC20.sol#135:5
+	(SLOC: 2) 📰💱🎯💥🟢🟩 | symbol,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/LaunchToken.sol#76:5
+	(SLOC: 2) 💱🎯💥🟩 | symbol,/home/ubuntu/2025-08-gte-perps/contracts/perps/GTL.sol#89:5
+	(SLOC: 0) 💱💥🟩 | symbol,/home/ubuntu/2025-08-gte-perps/lib/openzeppelin-contracts/contracts/token/ERC20/extensions/IERC20Metadata.sol#20:5
+	(SLOC: 2) 💱💥🟩 | symbol,/home/ubuntu/2025-08-gte-perps/lib/solady/src/tokens/WETH.sol#28:5
+(5) wrap
+	(SLOC: 2) 🎯🟩 | wrap,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Order.sol#19:5
+	(SLOC: 2) 🟩 | wrap,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/DynamicArrayLib.sol#345:5
+	(SLOC: 5) 🟩 | wrap,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/DynamicArrayLib.sol#350:5
+	(SLOC: 5) 🟩 | wrap,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/DynamicArrayLib.sol#358:5
+	(SLOC: 5) 🟩 | wrap,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/DynamicArrayLib.sol#366:5
+(4) getEventNonce
+	(SLOC: 0) 🎯💥🟩 | getEventNonce,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#14:5
+	(SLOC: 2) 🎯💥🟩 | getEventNonce,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#146:5
+	(SLOC: 2) 🎯💥🟩 | getEventNonce,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#255:5
+	(SLOC: 2) 🎯💥🟩 | getEventNonce,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOBManager.sol#155:5
+(4) getLimit
+	(SLOC: 0) 🎯💥🟩 | getLimit,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#105:5
+	(SLOC: 2) 🎯💥🟩 | getLimit,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#219:5
+	(SLOC: 2) 📰🎯🟩 | getLimit,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#468:5
+	(SLOC: 2) 📰🎯🟩 | getLimit,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Book.sol#139:5
+(4) getNextBiggestPrice
+	(SLOC: 0) 🎯💥🟩 | getNextBiggestPrice,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#111:5
+	(SLOC: 2) 🎯💥🟩 | getNextBiggestPrice,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#239:5
+	(SLOC: 2) 📰🎯🟩 | getNextBiggestPrice,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#473:5
+	(SLOC: 2) 📰🎯🟩 | getNextBiggestPrice,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Book.sol#143:5
+(4) getNextSmallestPrice
+	(SLOC: 0) 🎯💥🟩 | getNextSmallestPrice,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#113:5
+	(SLOC: 2) 🎯💥🟩 | getNextSmallestPrice,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#244:5
+	(SLOC: 2) 📰🎯🟩 | getNextSmallestPrice,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#478:5
+	(SLOC: 2) 📰🎯🟩 | getNextSmallestPrice,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Book.sol#147:5
+(4) getNextOrders
+	(SLOC: 0) 🎯💥🟩 | getNextOrders,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#115:5
+	(SLOC: 2) 🎯💥🟩 | getNextOrders,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#234:5
+	(SLOC: 27) 📰🎯🟩 | getNextOrders,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#196:5
+	(SLOC: 29) 📰🎯🟩 | getNextOrders,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Book.sol#275:5
+(4) adminCancelExpiredOrders
+	(SLOC: 0) 🎯💥 | adminCancelExpiredOrders,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#136:5
+	(SLOC: 25) 📰🎯💥❌ ['onlyManager'] | adminCancelExpiredOrders,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#320:5
+	(SLOC: 0) 🎯💥 | adminCancelExpiredOrders,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOBManager.sol#44:5
+	(SLOC: 5) 📰🎯💥🟢🌀❌ ['onlyOwnerOrRoles(uint256)'] | adminCancelExpiredOrders,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOBManager.sol#239:5
+(4) isExpired
+	(SLOC: 3) 🎯🟩 | isExpired,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Order.sol#102:5
+	(SLOC: 3) 🎯🟩 | isExpired,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Order.sol#108:5
+	(SLOC: 3) 🎯🟩 | isExpired,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Order.sol#90:5
+	(SLOC: 3) 🎯🟩 | isExpired,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Order.sol#95:5
+(4) supportsInterface
+	(SLOC: 0) 💥🟩 | supportsInterface,/home/ubuntu/2025-08-gte-perps/lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol#24:5
+	(SLOC: 0) 🎯💥🟩 | supportsInterface,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/IBondingCurveMinimal.sol#26:5
+	(SLOC: 2) 🎯💥🟩 | supportsInterface,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/SimpleBondingCurve.sol#160:5
+	(SLOC: 3) 🟩 | supportsInterface,/home/ubuntu/2025-08-gte-perps/lib/openzeppelin-contracts/contracts/utils/introspection/ERC165Checker.sol#36:5
+(3) creditAccount
+	(SLOC: 0) 🎯💥 | creditAccount,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#43:5
+	(SLOC: 2) 🎯💥❌ ['onlyMarket'] | creditAccount,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#349:5
+	(SLOC: 2) 📰🎯 | creditAccount,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/CollateralManager.sol#111:5
+(3) debitAccount
+	(SLOC: 0) 🎯💥 | debitAccount,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#45:5
+	(SLOC: 2) 🎯💥❌ ['onlyMarket'] | debitAccount,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#359:5
+	(SLOC: 3) 📰🎯 | debitAccount,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/CollateralManager.sol#115:5
+(3) amend
+	(SLOC: 0) 🎯💥 | amend,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#74:5
+	(SLOC: 18) 📰🎯💥❌ ['onlySenderOrOperator(address,SpotOperatorRoles)'] | amend,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#374:5
+	(SLOC: 20) 📰🎯 | amend,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/CLOBLib.sol#167:5
+(3) cancel
+	(SLOC: 0) 🎯💥 | cancel,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#76:5
+	(SLOC: 14) 📰🎯💥🟢🌀❌ ['onlySenderOrOperator(address,SpotOperatorRoles)'] | cancel,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#395:5
+	(SLOC: 7) 📰🎯 | cancel,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/CLOBLib.sol#189:5
+(3) getQuoteTokenAmount
+	(SLOC: 0) 🎯💥🟩 | getQuoteTokenAmount,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#79:5
+	(SLOC: 2) 🎯💥🟩 | getQuoteTokenAmount,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#179:5
+	(SLOC: 6) 📰🎯🟩 | getQuoteTokenAmount,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#492:5
+(3) getBaseTokenAmount
+	(SLOC: 0) 🎯💥🟩 | getBaseTokenAmount,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#81:5
+	(SLOC: 2) 🎯💥🟩 | getBaseTokenAmount,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#173:5
+	(SLOC: 6) 📰🎯🟩 | getBaseTokenAmount,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#483:5
+(3) getTickSize
+	(SLOC: 0) 🎯💥🟩 | getTickSize,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#95:5
+	(SLOC: 2) 🎯💥🟩 | getTickSize,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#194:5
+	(SLOC: 2) 🎯💥🟩 | getTickSize,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/ViewPort.sol#371:5
+(3) getOpenInterest
+	(SLOC: 0) 🎯💥🟩 | getOpenInterest,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#99:5
+	(SLOC: 2) 🎯💥🟩 | getOpenInterest,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#204:5
+	(SLOC: 5) 📰🎯💥🟩 | getOpenInterest,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/ViewPort.sol#209:5
+(3) getNumBids
+	(SLOC: 0) 🎯💥🟩 | getNumBids,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#107:5
+	(SLOC: 2) 🎯💥🟩 | getNumBids,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#224:5
+	(SLOC: 2) 🎯💥🟩 | getNumBids,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/ViewPort.sol#230:5
+(3) getNumAsks
+	(SLOC: 0) 🎯💥🟩 | getNumAsks,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#109:5
+	(SLOC: 2) 🎯💥🟩 | getNumAsks,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#229:5
+	(SLOC: 2) 🎯💥🟩 | getNumAsks,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/ViewPort.sol#238:5
+(3) getNextOrderId
+	(SLOC: 0) 🎯💥🟩 | getNextOrderId,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#117:5
+	(SLOC: 2) 🎯💥🟩 | getNextOrderId,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#250:5
+	(SLOC: 2) 🎯💥🟩 | getNextOrderId,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/ViewPort.sol#246:5
+(3) _getStorage
+	(SLOC: 2) 🎯🟩 | _getStorage,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#982:5
+	(SLOC: 2) 📰🎯🟩 | _getStorage,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOBManager.sol#325:5
+	(SLOC: 2) 🎯🟩 | _getStorage,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/CLOBLib.sol#651:5
+(3) isMarket
+	(SLOC: 0) 🎯💥🟩 | isMarket,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOBManager.sol#29:5
+	(SLOC: 2) 🎯💥🟩 | isMarket,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOBManager.sol#145:5
+	(SLOC: 3) 🎯🌈 | isMarket,/home/ubuntu/2025-08-gte-perps/contracts/router/GTERouter.sol#85:5
+(3) createMarket
+	(SLOC: 2) 🎯💥 | createMarket,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOBManager.sol#32:5
+	(SLOC: 54) 📰🎯💥🟢🌀❌ ['onlyOwnerOrRoles(uint256)'] | createMarket,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOBManager.sol#164:5
+	(SLOC: 58) 📰🎯💥❌ ['onlyAdmin'] | createMarket,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/AdminPanel.sol#145:5
+(3) getMaxLimitExempt
+	(SLOC: 0) 🎯💥🟩 | getMaxLimitExempt,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOBManager.sol#37:5
+	(SLOC: 2) 🎯💥🟩 | getMaxLimitExempt,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOBManager.sol#150:5
+	(SLOC: 7) 📰🎯🟢🟩 | getMaxLimitExempt,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Book.sol#130:5
+(3) isNull
+	(SLOC: 2) 🎯🟩 | isNull,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Order.sol#23:5
+	(SLOC: 2) 📰🎯🟩 | isNull,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Order.sol#114:5
+	(SLOC: 2) 🎯🟩 | isNull,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Order.sol#101:5
+(3) insert
+	(SLOC: 2) 📰🎯 | insert,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/RedBlackTree.sol#65:5
+	(SLOC: 3) 📰 | insert,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/RedBlackTreeLib.sol#189:5
+	(SLOC: 85) 📰🟢 | insert,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/RedBlackTreeLib.sol#394:13
+(3) buy
+	(SLOC: 0) 🎯💥 | buy,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/IBondingCurveMinimal.sol#10:5
+	(SLOC: 7) 📰🎯💥🟢🔴❌ ['onlyLaunchpad'] | buy,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/SimpleBondingCurve.sol#98:5
+	(SLOC: 33) 📰🎯💥🟢🌀❌ ['nonReentrant', 'onlyBondingActive(address)', 'onlySenderOrOperator(address,SpotOperatorRoles)'] | buy,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/Launchpad.sol#272:5
+(3) sell
+	(SLOC: 0) 🎯💥 | sell,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/IBondingCurveMinimal.sol#11:5
+	(SLOC: 7) 📰🎯💥🟢🔴❌ ['onlyLaunchpad'] | sell,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/SimpleBondingCurve.sol#107:5
+	(SLOC: 31) 📰🎯💥🟢🌀❌ ['nonReentrant', 'onlyBondingActive(address)', 'onlySenderOrOperator(address,SpotOperatorRoles)'] | sell,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/Launchpad.sol#332:5
+(3) quoteBaseForQuote
+	(SLOC: 3) 🎯💥🟩 | quoteBaseForQuote,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/IBondingCurveMinimal.sol#13:5
+	(SLOC: 7) 📰🎯💥🟢🟩 | quoteBaseForQuote,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/SimpleBondingCurve.sol#142:5
+	(SLOC: 6) 📰🎯💥🟢🟩🌀 | quoteBaseForQuote,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/Launchpad.sol#213:5
+(3) quoteQuoteForBase
+	(SLOC: 3) 🎯💥🟩 | quoteQuoteForBase,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/IBondingCurveMinimal.sol#17:5
+	(SLOC: 7) 📰🎯💥🟢🟩 | quoteQuoteForBase,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/SimpleBondingCurve.sol#151:5
+	(SLOC: 6) 📰🎯💥🟢🟩🌀 | quoteQuoteForBase,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/Launchpad.sol#221:5
+(3) baseSoldFromCurve
+	(SLOC: 0) 🎯💥🟩 | baseSoldFromCurve,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/IBondingCurveMinimal.sol#21:5
+	(SLOC: 2) 📰🎯💥🟢🟩 | baseSoldFromCurve,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/SimpleBondingCurve.sol#128:5
+	(SLOC: 2) 📰🎯💥🟢🟩🌀 | baseSoldFromCurve,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/Launchpad.sol#205:5
+(3) quoteBoughtByCurve
+	(SLOC: 0) 🎯💥🟩 | quoteBoughtByCurve,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/IBondingCurveMinimal.sol#22:5
+	(SLOC: 2) 📰🎯💥🟢🟩 | quoteBoughtByCurve,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/SimpleBondingCurve.sol#132:5
+	(SLOC: 2) 📰🎯💥🟢🟩🌀 | quoteBoughtByCurve,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/Launchpad.sol#209:5
+(3) onlyLaunchpad
+	(SLOC: 3) 📰🎯🌈🟢 | onlyLaunchpad,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/SimpleBondingCurve.sol#48:5
+	(SLOC: 3) 📰🎯🌈🟢 | onlyLaunchpad,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/Distributor.sol#45:5
+	(SLOC: 3) 📰🎯🌈🟢 | onlyLaunchpad,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/LaunchToken.sol#61:5
+(3) mint
+	(SLOC: 4) 📰🎯💥🟢❌ ['onlyLaunchpad'] | mint,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/LaunchToken.sol#96:5
+	(SLOC: 21) 📰🎯💥🟢🔴🌀 ['lock'] | mint,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/uniswap/GTELaunchpadV2Pair.sol#183:5
+	(SLOC: 4) 💥 | mint,/home/ubuntu/2025-08-gte-perps/lib/solady/src/tokens/ERC4626.sol#393:5
+(3) isLiquidatable
+	(SLOC: 2) 🎯💥🟩 | isLiquidatable,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/ViewPort.sol#109:5
+	(SLOC: 11) 📰🎯🟩 | isLiquidatable,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/ClearingHouse.sol#485:5
+	(SLOC: 20) 📰🎯🟩 | isLiquidatable,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/ClearingHouse.sol#498:5
+(3) settleFunding
+	(SLOC: 6) 📰🎯💥❌ ['onlyAdmin'] | settleFunding,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/AdminPanel.sol#217:5
+	(SLOC: 20) 📰🎯 | settleFunding,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/FundingRateEngine.sol#43:5
+	(SLOC: 21) 📰🎯 | settleFunding,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Market.sol#198:5
+(3) onlyActiveProtocol
+	(SLOC: 3) 🎯🌈 | onlyActiveProtocol,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/LiquidatorPanel.sol#152:5
+	(SLOC: 3) 🎯🌈 | onlyActiveProtocol,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/AdminPanel.sol#111:5
+	(SLOC: 3) 🎯🌈 | onlyActiveProtocol,/home/ubuntu/2025-08-gte-perps/contracts/perps/PerpManager.sol#88:5
+(3) exists
+	(SLOC: 2) 📰🎯🟩 | exists,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Book.sol#78:5
+	(SLOC: 2) 📰🎯🟩 | exists,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Market.sol#506:5
+	(SLOC: 3) 📰🟩 | exists,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/RedBlackTreeLib.sol#182:5
+(3) getUpnl
+	(SLOC: 10) 📰🎯🟩 | getUpnl,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/ClearingHouse.sol#402:5
+	(SLOC: 6) 📰🎯🟩 | getUpnl,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Market.sol#306:5
+	(SLOC: 4) 📰🎯🟩 | getUpnl,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Market.sol#366:5
+(3) realizeFundingPayment
+	(SLOC: 10) 🎯🟩 | realizeFundingPayment,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/ClearingHouse.sol#449:5
+	(SLOC: 6) 🎯🟩 | realizeFundingPayment,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Market.sol#246:5
+	(SLOC: 14) 🎯🟩 | realizeFundingPayment,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Position.sol#54:5
+(2) approveOperator
+	(SLOC: 10) 🔀📰🎯💥❌ ['onlySenderOrOperatorHub(address)'] | approveOperator,/home/ubuntu/2025-08-gte-perps/contracts/utils/OperatorPanel.sol#85:5
+	(SLOC: 8) 📰🎯💥🟢🌀❌ ['onlyOwner'] | approveOperator,/home/ubuntu/2025-08-gte-perps/contracts/perps/GTL.sol#167:5
+(2) disapproveOperator
+	(SLOC: 10) 🔀📰🎯💥❌ ['onlySenderOrOperatorHub(address)'] | disapproveOperator,/home/ubuntu/2025-08-gte-perps/contracts/utils/OperatorPanel.sol#97:5
+	(SLOC: 6) 📰🎯💥🟢🌀❌ ['onlyOwner'] | disapproveOperator,/home/ubuntu/2025-08-gte-perps/contracts/perps/GTL.sol#177:5
+(2) getAccountBalance
+	(SLOC: 0) 🎯💥🟩 | getAccountBalance,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#13:5
+	(SLOC: 2) 🎯💥🟩 | getAccountBalance,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#141:5
+(2) getTotalFees
+	(SLOC: 0) 🎯💥🟩 | getTotalFees,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#15:5
+	(SLOC: 2) 🎯💥🟩 | getTotalFees,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#151:5
+(2) getUnclaimedFees
+	(SLOC: 0) 🎯💥🟩 | getUnclaimedFees,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#16:5
+	(SLOC: 2) 🎯💥🟩 | getUnclaimedFees,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#156:5
+(2) getFeeTier
+	(SLOC: 0) 🎯💥🟩 | getFeeTier,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#17:5
+	(SLOC: 2) 🎯💥🟩 | getFeeTier,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#161:5
+(2) getSpotTakerFeeRateForTier
+	(SLOC: 0) 🎯💥🟩 | getSpotTakerFeeRateForTier,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#18:5
+	(SLOC: 2) 📰🎯💥🟢🟩 | getSpotTakerFeeRateForTier,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#166:5
+(2) getSpotMakerFeeRateForTier
+	(SLOC: 0) 🎯💥🟩 | getSpotMakerFeeRateForTier,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#19:5
+	(SLOC: 2) 📰🎯💥🟢🟩 | getSpotMakerFeeRateForTier,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#171:5
+(2) depositFromPerps
+	(SLOC: 0) 🎯💥 | depositFromPerps,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#26:5
+	(SLOC: 6) 📰🎯💥🟢🌀❌ ['onlySenderOrOperator(address,SpotOperatorRoles)'] | depositFromPerps,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#196:5
+(2) withdrawToPerps
+	(SLOC: 0) 🎯💥 | withdrawToPerps,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#27:5
+	(SLOC: 7) 📰🎯💥🟢🌀 | withdrawToPerps,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#220:5
+(2) depositFromRouter
+	(SLOC: 0) 🎯💥 | depositFromRouter,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#28:5
+	(SLOC: 3) 📰🎯💥🟢❌ ['onlyGTERouter'] | depositFromRouter,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#205:5
+(2) withdrawToRouter
+	(SLOC: 0) 🎯💥 | withdrawToRouter,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#29:5
+	(SLOC: 3) 📰🎯💥🟢❌ ['onlyGTERouter'] | withdrawToRouter,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#230:5
+(2) registerMarket
+	(SLOC: 0) 🎯💥 | registerMarket,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#32:5
+	(SLOC: 3) 🎯💥❌ ['onlyCLOBManager'] | registerMarket,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#240:5
+(2) settleIncomingOrder
+	(SLOC: 0) 🎯💥 | settleIncomingOrder,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#35:5
+	(SLOC: 60) 📰🎯💥🟢❌ ['onlyMarket'] | settleIncomingOrder,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#286:5
+(2) collectFees
+	(SLOC: 0) 🎯💥 | collectFees,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#38:5
+	(SLOC: 13) 📰🎯💥🟢❌ ['onlyOwnerOrRoles(uint256)'] | collectFees,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#246:5
+(2) setSpotAccountFeeTier
+	(SLOC: 0) 🎯💥 | setSpotAccountFeeTier,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#39:5
+	(SLOC: 3) 📰🎯💥❌ ['onlyCLOBManager'] | setSpotAccountFeeTier,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#262:5
+(2) setSpotAccountFeeTiers
+	(SLOC: 0) 🎯💥 | setSpotAccountFeeTiers,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#40:5
+	(SLOC: 11) 📰🎯💥❌ ['onlyCLOBManager'] | setSpotAccountFeeTiers,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#268:5
+(2) creditAccountNoEvent
+	(SLOC: 0) 🎯💥 | creditAccountNoEvent,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/IAccountManager.sol#44:5
+	(SLOC: 2) 🎯💥❌ ['onlyMarket'] | creditAccountNoEvent,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#354:5
+(2) depositTo
+	(SLOC: 5) 🎯💥 | depositTo,/home/ubuntu/2025-08-gte-perps/contracts/account-manager/AccountManager.sol#189:5
+	(SLOC: 6) 🎯💥 | depositTo,/home/ubuntu/2025-08-gte-perps/contracts/perps/PerpManager.sol#111:5
+(2) getQuoteToken
+	(SLOC: 0) 🎯💥🟩 | getQuoteToken,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#89:5
+	(SLOC: 2) 🎯💥🟩 | getQuoteToken,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#167:5
+(2) getBaseToken
+	(SLOC: 0) 🎯💥🟩 | getBaseToken,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#91:5
+	(SLOC: 2) 🎯💥🟩 | getBaseToken,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#162:5
+(2) getMarketConfig
+	(SLOC: 0) 🎯💥🟩 | getMarketConfig,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#93:5
+	(SLOC: 2) 🎯💥🟩 | getMarketConfig,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#184:5
+(2) getLotSizeInBase
+	(SLOC: 0) 🎯💥🟩 | getLotSizeInBase,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#97:5
+	(SLOC: 2) 🎯💥🟩 | getLotSizeInBase,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#199:5
+(2) getOrder
+	(SLOC: 0) 🎯💥🟩 | getOrder,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#101:5
+	(SLOC: 2) 🎯💥🟩 | getOrder,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#209:5
+(2) getTOB
+	(SLOC: 0) 🎯💥🟩 | getTOB,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOB.sol#103:5
+	(SLOC: 2) 🎯💥🟩 | getTOB,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#214:5
+(2) getBaseQuanta
+	(SLOC: 2) 🎯💥🟩 | getBaseQuanta,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#286:5
+	(SLOC: 4) 📰🎯🟩 | getBaseQuanta,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#255:5
+(2) _processAmend
+	(SLOC: 30) 📰🎯 | _processAmend,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#617:5
+	(SLOC: 16) 📰🎯 | _processAmend,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/CLOBLib.sol#515:5
+(2) _executeAmendNewOrder
+	(SLOC: 28) 📰🎯 | _executeAmendNewOrder,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#650:5
+	(SLOC: 27) 📰🎯 | _executeAmendNewOrder,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/CLOBLib.sol#534:5
+(2) _executeAmendAmount
+	(SLOC: 21) 🔀📰🎯 | _executeAmendAmount,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#681:5
+	(SLOC: 46) 🔀📰🎯 | _executeAmendAmount,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/CLOBLib.sol#564:5
+(2) _matchIncomingBid
+	(SLOC: 27) 📰🎯 | _matchIncomingBid,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#716:5
+	(SLOC: 29) 📰🎯 | _matchIncomingBid,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/CLOBLib.sol#338:5
+(2) _matchIncomingAsk
+	(SLOC: 27) 📰🎯 | _matchIncomingAsk,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#746:5
+	(SLOC: 29) 📰🎯 | _matchIncomingAsk,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/CLOBLib.sol#369:5
+(2) _matchIncomingOrder
+	(SLOC: 43) 🔀📰🎯 | _matchIncomingOrder,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#798:5
+	(SLOC: 57) 🔀📰🎯 | _matchIncomingOrder,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/CLOBLib.sol#400:5
+(2) _executeCancel
+	(SLOC: 32) 📰🎯 | _executeCancel,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOB.sol#896:5
+	(SLOC: 36) 📰🎯 | _executeCancel,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/CLOBLib.sol#459:5
+(2) getMarketAddress
+	(SLOC: 0) 🎯💥🟩 | getMarketAddress,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOBManager.sol#28:5
+	(SLOC: 2) 🎯💥🟩 | getMarketAddress,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOBManager.sol#140:5
+(2) setAccountFeeTiers
+	(SLOC: 0) 🎯💥 | setAccountFeeTiers,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOBManager.sol#45:5
+	(SLOC: 5) 📰🎯💥🟢🌀❌ ['onlyOwnerOrRoles(uint256)'] | setAccountFeeTiers,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOBManager.sol#247:5
+(2) setMaxLimitsExempt
+	(SLOC: 0) 🎯💥 | setMaxLimitsExempt,/home/ubuntu/2025-08-gte-perps/contracts/clob/ICLOBManager.sol#46:5
+	(SLOC: 10) 📰🎯💥🟢❌ ['onlyOwnerOrRoles(uint256)'] | setMaxLimitsExempt,/home/ubuntu/2025-08-gte-perps/contracts/clob/CLOBManager.sol#255:5
+(2) assertLimitPriceInBounds
+	(SLOC: 4) 📰🎯🟩 | assertLimitPriceInBounds,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#103:5
+	(SLOC: 4) 📰🎯🟩 | assertLimitPriceInBounds,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Book.sol#82:5
+(2) assertUnusedOrderId
+	(SLOC: 2) 📰🎯🟩 | assertUnusedOrderId,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#120:5
+	(SLOC: 2) 📰🎯🟩 | assertUnusedOrderId,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Book.sol#104:5
+(2) incrementLimitsPlaced
+	(SLOC: 13) 📰🎯🟢 | incrementLimitsPlaced,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#137:5
+	(SLOC: 15) 📰🎯🟢 | incrementLimitsPlaced,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Book.sol#350:5
+(2) incrementOrderId
+	(SLOC: 2) 📰🎯 | incrementOrderId,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#153:5
+	(SLOC: 2) 📰🎯 | incrementOrderId,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Book.sol#315:5
+(2) addOrderToBook
+	(SLOC: 4) 📰🎯 | addOrderToBook,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#158:5
+	(SLOC: 11) 🔀📰🎯 | addOrderToBook,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Book.sol#367:5
+(2) removeOrderFromBook
+	(SLOC: 3) 📰🎯 | removeOrderFromBook,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#165:5
+	(SLOC: 9) 📰🎯 | removeOrderFromBook,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Book.sol#380:5
+(2) boundToLots
+	(SLOC: 4) 📰🎯🟩 | boundToLots,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#172:5
+	(SLOC: 4) 📰🎯🟩 | boundToLots,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Book.sol#175:5
+(2) _updateBookPostOrder
+	(SLOC: 14) 🔀📰🎯 | _updateBookPostOrder,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#276:5
+	(SLOC: 12) 🔀📰🎯 | _updateBookPostOrder,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Book.sol#391:5
+(2) _updateLimitPostOrder
+	(SLOC: 14) 🔀📰🎯 | _updateLimitPostOrder,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#292:5
+	(SLOC: 12) 🔀📰🎯 | _updateLimitPostOrder,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Book.sol#405:5
+(2) _updateBookRemoveOrder
+	(SLOC: 12) 🔀📰🎯 | _updateBookRemoveOrder,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#308:5
+	(SLOC: 12) 🔀📰🎯 | _updateBookRemoveOrder,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Book.sol#419:5
+(2) _updateLimitRemoveOrder
+	(SLOC: 26) 🔀📰🎯 | _updateLimitRemoveOrder,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Book.sol#322:5
+	(SLOC: 21) 🔀📰🎯 | _updateLimitRemoveOrder,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Book.sol#433:5
+(2) packFeeRates
+	(SLOC: 9) 📰🎯🟢🟩 | packFeeRates,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/FeeData.sol#25:5
+	(SLOC: 9) 🎯🟩 | packFeeRates,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/PackedFeeRatesLib.sol#14:5
+(2) getFeeAt
+	(SLOC: 6) 📰🎯🟢🟩 | getFeeAt,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/FeeData.sol#36:5
+	(SLOC: 6) 🎯🟩 | getFeeAt,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/PackedFeeRatesLib.sol#25:5
+(2) getTakerFee
+	(SLOC: 9) 📰🎯🟢🟩 | getTakerFee,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/FeeData.sol#91:5
+	(SLOC: 5) 📰🎯🟢🟩 | getTakerFee,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/FeeManager.sol#35:5
+(2) getMakerFee
+	(SLOC: 9) 📰🎯🟢🟩 | getMakerFee,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/FeeData.sol#103:5
+	(SLOC: 5) 📰🎯🟢🟩 | getMakerFee,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/FeeManager.sol#42:5
+(2) getAccountFeeTier
+	(SLOC: 2) 📰🎯🟩 | getAccountFeeTier,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/FeeData.sol#115:5
+	(SLOC: 2) 📰🎯🟩 | getAccountFeeTier,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/FeeManager.sol#57:5
+(2) setAccountFeeTier
+	(SLOC: 4) 🔀📰🎯 | setAccountFeeTier,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/FeeData.sol#120:5
+	(SLOC: 2) 🔀📰🎯 | setAccountFeeTier,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/FeeManager.sol#23:5
+(2) toOrderId
+	(SLOC: 2) 🎯🟩 | toOrderId,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Order.sol#15:5
+	(SLOC: 6) 📰🎯 | toOrderId,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Book.sol#306:5
+(2) unwrap
+	(SLOC: 2) 🎯🟩 | unwrap,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Order.sol#19:5
+	(SLOC: 2) 🎯🟩 | unwrap,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Order.sol#23:5
+(2) assertExists
+	(SLOC: 2) 📰🎯🟩 | assertExists,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/Order.sol#119:5
+	(SLOC: 2) 🎯🟩 | assertExists,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Order.sol#106:5
+(2) size
+	(SLOC: 2) 📰🎯🟩 | size,/home/ubuntu/2025-08-gte-perps/contracts/clob/types/RedBlackTree.sol#19:5
+	(SLOC: 6) 📰🟢🟩 | size,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/RedBlackTreeLib.sol#99:5
+(2) bondingSupply
+	(SLOC: 0) 🎯💥🟩 | bondingSupply,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/IBondingCurveMinimal.sol#24:5
+	(SLOC: 2) 📰🎯💥🟢🟩 | bondingSupply,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/SimpleBondingCurve.sol#120:5
+(2) getReserves
+	(SLOC: 4) 📰🎯💥🟢🟩 | getReserves,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/BondingCurves/SimpleBondingCurve.sol#136:5
+	(SLOC: 4) 📰🎯💥🟢🟩 | getReserves,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/uniswap/GTELaunchpadV2Pair.sol#61:5
+(2) getRewardsPoolData
+	(SLOC: 2) 🎯💥🟩 | getRewardsPoolData,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/Distributor.sol#56:5
+	(SLOC: 9) 📰🎯🟩 | getRewardsPoolData,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/libraries/RewardsTracker.sol#65:5
+(2) getUserData
+	(SLOC: 2) 🎯💥🟩 | getUserData,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/Distributor.sol#60:5
+	(SLOC: 2) 📰🎯🟩 | getUserData,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/libraries/RewardsTracker.sol#61:5
+(2) getPendingRewards
+	(SLOC: 8) 📰🎯💥🟩 | getPendingRewards,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/Distributor.sol#77:5
+	(SLOC: 15) 📰🎯🟩 | getPendingRewards,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/libraries/RewardsTracker.sol#169:5
+(2) endRewards
+	(SLOC: 2) 🎯💥🌀❌ ['onlyLaunchpad'] | endRewards,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/Distributor.sol#87:5
+	(SLOC: 6) 📰🎯💥🟢🌀❌ ['onlyLaunchAsset'] | endRewards,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/Launchpad.sol#433:5
+(2) increaseStake
+	(SLOC: 9) 📰🎯💥❌ ['onlyLaunchpad'] | increaseStake,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/Distributor.sol#135:5
+	(SLOC: 2) 📰🎯💥🟢🌀❌ ['onlyLaunchAsset'] | increaseStake,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/Launchpad.sol#422:5
+(2) decreaseStake
+	(SLOC: 9) 📰🎯💥❌ ['onlyLaunchpad'] | decreaseStake,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/Distributor.sol#147:5
+	(SLOC: 2) 📰🎯💥🟢🌀❌ ['onlyLaunchAsset'] | decreaseStake,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/Launchpad.sol#426:5
+(2) _beforeTokenTransfer
+	(SLOC: 0)  | _beforeTokenTransfer,/home/ubuntu/2025-08-gte-perps/lib/solady/src/tokens/ERC20.sol#652:5
+	(SLOC: 13) 📰🎯🟢 | _beforeTokenTransfer,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/LaunchToken.sol#106:5
+(2) _afterTokenTransfer
+	(SLOC: 0)  | _afterTokenTransfer,/home/ubuntu/2025-08-gte-perps/lib/solady/src/tokens/ERC20.sol#656:5
+	(SLOC: 2) 📰🎯🟢🟩 | _afterTokenTransfer,/home/ubuntu/2025-08-gte-perps/contracts/perps/GTL.sol#267:5
+(2) fallback
+	(SLOC: 2) 🎯💥 | fallback,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/LaunchpadLPVault.sol#40:5
+	(SLOC: 2) 💥💲 | fallback,/home/ubuntu/2025-08-gte-perps/lib/openzeppelin-contracts/contracts/proxy/Proxy.sol#66:5
+(2) claim
+	(SLOC: 21) 🔀📰🎯 | claim,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/libraries/RewardsTracker.sol#146:5
+	(SLOC: 4) 🎯 | claim,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/InsuranceFund.sol#33:5
+(2) _update
+	(SLOC: 41) 📰🎯🟢🔴 | _update,/home/ubuntu/2025-08-gte-perps/contracts/launchpad/uniswap/GTELaunchpadV2Pair.sol#118:5
+	(SLOC: 319)  | _update,/home/ubuntu/2025-08-gte-perps/lib/solady/src/utils/RedBlackTreeLib.sol#348:5
+(2) asset
+	(SLOC: 0) 💥🟩 | asset,/home/ubuntu/2025-08-gte-perps/lib/solady/src/tokens/ERC4626.sol#71:5
+	(SLOC: 2) 📰🎯💥🟢🟩 | asset,/home/ubuntu/2025-08-gte-perps/contracts/perps/GTL.sol#93:5
+(2) totalAssets
+	(SLOC: 2) 💥🟩 | totalAssets,/home/ubuntu/2025-08-gte-perps/lib/solady/src/tokens/ERC4626.sol#152:5
+	(SLOC: 2) 📰🎯💥🟢🟩 | totalAssets,/home/ubuntu/2025-08-gte-perps/contracts/perps/GTL.sol#201:5
+(2) previewWithdraw
+	(SLOC: 12) 💥🟩 | previewWithdraw,/home/ubuntu/2025-08-gte-perps/lib/solady/src/tokens/ERC4626.sol#266:5
+	(SLOC: 2) 🎯💥🟩 | previewWithdraw,/home/ubuntu/2025-08-gte-perps/contracts/perps/GTL.sol#251:5
+(2) maxWithdraw
+	(SLOC: 2) 💥🟩 | maxWithdraw,/home/ubuntu/2025-08-gte-perps/lib/solady/src/tokens/ERC4626.sol#347:5
+	(SLOC: 2) 🎯💥🟩 | maxWithdraw,/home/ubuntu/2025-08-gte-perps/contracts/perps/GTL.sol#255:5
+(2) maxRedeem
+	(SLOC: 2) 💥🟩 | maxRedeem,/home/ubuntu/2025-08-gte-perps/lib/solady/src/tokens/ERC4626.sol#357:5
+	(SLOC: 2) 🎯💥🟩 | maxRedeem,/home/ubuntu/2025-08-gte-perps/contracts/perps/GTL.sol#259:5
+(2) onlyAdmin
+	(SLOC: 3) 🎯🌈 | onlyAdmin,/home/ubuntu/2025-08-gte-perps/contracts/perps/GTL.sol#56:5
+	(SLOC: 3) 🎯🌈 | onlyAdmin,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/AdminPanel.sol#106:5
+(2) getPosition
+	(SLOC: 6) 🎯💥🟩 | getPosition,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/ViewPort.sol#32:5
+	(SLOC: 8) 📰🎯🟩 | getPosition,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Market.sol#372:5
+(2) getPositionLeverage
+	(SLOC: 6) 🎯💥🟩 | getPositionLeverage,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/ViewPort.sol#40:5
+	(SLOC: 8) 📰🎯🟩 | getPositionLeverage,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Market.sol#382:5
+(2) getAssets
+	(SLOC: 2) 🎯💥🟩 | getAssets,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/ViewPort.sol#48:5
+	(SLOC: 6) 📰🎯🟩 | getAssets,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/ClearingHouse.sol#376:5
+(2) getMarginBalance
+	(SLOC: 2) 🎯💥🟩 | getMarginBalance,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/ViewPort.sol#60:5
+	(SLOC: 6) 📰🎯🟩 | getMarginBalance,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/CollateralManager.sol#137:5
+(2) getFreeCollateralBalance
+	(SLOC: 2) 🎯💥🟩 | getFreeCollateralBalance,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/ViewPort.sol#64:5
+	(SLOC: 6) 📰🎯🟩 | getFreeCollateralBalance,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/CollateralManager.sol#129:5
+(2) getMaintenanceMargin
+	(SLOC: 6) 🎯💥🟩 | getMaintenanceMargin,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/ViewPort.sol#117:5
+	(SLOC: 4) 📰🎯🟩 | getMaintenanceMargin,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Market.sol#392:5
+(2) getIntendedMarginAndUpnl
+	(SLOC: 6) 🎯💥🟩 | getIntendedMarginAndUpnl,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/ViewPort.sol#125:5
+	(SLOC: 11) 📰🎯🟩 | getIntendedMarginAndUpnl,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Market.sol#353:5
+(2) getCumulativeFunding
+	(SLOC: 2) 🎯💥🟩 | getCumulativeFunding,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/ViewPort.sol#197:5
+	(SLOC: 2) 📰🎯🟩 | getCumulativeFunding,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/FundingRateEngine.sol#75:5
+(2) getMidPrice
+	(SLOC: 2) 🎯💥🟩 | getMidPrice,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/ViewPort.sol#254:5
+	(SLOC: 9) 📰🎯🟩 | getMidPrice,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Market.sol#437:5
+(2) getMinMarginRatio
+	(SLOC: 2) 🎯💥🟩 | getMinMarginRatio,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/ViewPort.sol#310:5
+	(SLOC: 4) 📰🎯🟩 | getMinMarginRatio,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Market.sol#486:5
+(2) getFundingInterval
+	(SLOC: 2) 🎯💥🟩 | getFundingInterval,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/ViewPort.sol#338:5
+	(SLOC: 4) 📰🎯🟩 | getFundingInterval,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/FundingRateEngine.sol#69:5
+(2) liquidate
+	(SLOC: 71) 📰🎯💥❌ ['onlyLiquidator', 'onlyActiveProtocol'] | liquidate,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/LiquidatorPanel.sol#161:5
+	(SLOC: 26) 📰🎯 | liquidate,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Market.sol#166:5
+(2) setMarkPrice
+	(SLOC: 6) 📰🎯💥❌ ['onlyAdmin'] | setMarkPrice,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/AdminPanel.sol#209:5
+	(SLOC: 23) 🔀📰🎯 | setMarkPrice,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Market.sol#221:5
+(2) setTakerFeeRates
+	(SLOC: 4) 🎯💥❌ ['onlyAdmin'] | setTakerFeeRates,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/AdminPanel.sol#307:5
+	(SLOC: 2) 📰🎯 | setTakerFeeRates,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/FeeManager.sol#27:5
+(2) setMakerFeeRates
+	(SLOC: 4) 🎯💥❌ ['onlyAdmin'] | setMakerFeeRates,/home/ubuntu/2025-08-gte-perps/contracts/perps/modules/AdminPanel.sol#313:5
+	(SLOC: 2) 📰🎯 | setMakerFeeRates,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/FeeManager.sol#31:5
+(2) depositFromSpot
+	(SLOC: 6) 📰🎯💥🟢🌀❌ ['onlySenderOrOperator(address,PerpsOperatorRoles)'] | depositFromSpot,/home/ubuntu/2025-08-gte-perps/contracts/perps/PerpManager.sol#119:5
+	(SLOC: 3) 📰🎯 | depositFromSpot,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/CollateralManager.sol#47:5
+(2) withdrawToSpot
+	(SLOC: 3) 📰🎯💥🟢 | withdrawToSpot,/home/ubuntu/2025-08-gte-perps/contracts/perps/PerpManager.sol#127:5
+	(SLOC: 6) 📰🎯🟢 | withdrawToSpot,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/CollateralManager.sol#52:5
+(2) amendLimitOrder
+	(SLOC: 11) 📰🎯💥❌ ['onlySenderOrOperator(address,PerpsOperatorRoles)', 'onlyActiveProtocol'] | amendLimitOrder,/home/ubuntu/2025-08-gte-perps/contracts/perps/PerpManager.sol#328:5
+	(SLOC: 8) 📰🎯❌ ['onlyActiveMarket(bytes32)'] | amendLimitOrder,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Market.sol#152:5
+(2) _getCollateral
+	(SLOC: 6) 🎯🟩 | _getCollateral,/home/ubuntu/2025-08-gte-perps/contracts/perps/PerpManager.sol#392:5
+	(SLOC: 6) 🎯🟩 | _getCollateral,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/ClearingHouse.sol#554:5
+(2) _div
+	(SLOC: 3) 🎯🟩 | _div,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/CLOBLib.sol#646:5
+	(SLOC: 3) 🎯🟩 | _div,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/FundingRateEngine.sol#120:5
+(2) getIntendedMargin
+	(SLOC: 10) 📰🎯🟩 | getIntendedMargin,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/ClearingHouse.sol#414:5
+	(SLOC: 10) 📰🎯🟩 | getIntendedMargin,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Market.sol#331:5
+(2) getFundingPayment
+	(SLOC: 10) 📰🎯🟩 | getFundingPayment,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/ClearingHouse.sol#473:5
+	(SLOC: 7) 📰🎯🟩 | getFundingPayment,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Market.sol#398:5
+(2) _mul
+	(SLOC: 3) 🎯🟩 | _mul,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/FundingRateEngine.sol#125:5
+	(SLOC: 3) 🎯🟩 | _mul,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Position.sol#145:5
+(2) toOrder
+	(SLOC: 16) 🎯🟩 | toOrder,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Order.sol#57:5
+	(SLOC: 13) 📰🎯🟩 | toOrder,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/Order.sol#75:5
+(2) loadBook
+	(SLOC: 9) 📰🎯🟢🟩 | loadBook,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/StorageLib.sol#128:5
+	(SLOC: 9) 📰🎯🟢🟩 | loadBook,/home/ubuntu/2025-08-gte-perps/contracts/perps/types/StorageLib.sol#150:5

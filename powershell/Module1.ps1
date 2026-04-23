@@ -1,5 +1,17 @@
 $script:MODULE1_GLOBAL = "I'm global in module1"
 
+# Phase 1: PS5+ class
+class Shape {
+    [double] $R
+    Shape([double]$r) { $this.R = $r }
+    [double] Area() { return [Math]::PI * $this.R * $this.R }
+}
+
+function Set-Module1Global {
+    param([string]$Value)
+    $script:MODULE1_GLOBAL = $Value # cross-script WRITE target
+}
+
 function Function1 {
     $localVar = "I'm local to Function1"
     Write-Host "This is Function1 from Module1"

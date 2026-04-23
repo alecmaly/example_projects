@@ -1,0 +1,12 @@
+{
+  "name": "mono/shared",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Mono\\Shared\\": "src/"
+    },
+    "files": [
+      "src/functions.php"
+    ]
+  }
+}

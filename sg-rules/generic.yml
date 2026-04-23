@@ -1,0 +1,13 @@
+rules:
+  - id: example-projects-generic-todo
+    patterns:
+      - pattern-regex: "(?i)\\b(TODO|FIXME|XXX|HACK)\\b"
+    message: "TODO/FIXME comment"
+    languages: [generic]
+    severity: INFO
+    paths:
+      exclude:
+        - "*/sg-rules/*"
+        - "*/node_modules/*"
+        - "*/target/*"
+        - "*/.vscode/*"

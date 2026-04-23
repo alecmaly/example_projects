@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include "header1.h"
 
-static char* header1_global = "I'm global in header1";
+/* Non-static so main.c can WRITE it across TUs. */
+char* header1_global = "I'm global in header1";
 
 static void private_method(struct1_t* s);
 
@@ -29,4 +30,8 @@ static void private_method(struct1_t* s) {
 
 char* get_header1_global() {
     return header1_global;
+}
+
+void set_header1_global(char* v) {
+    header1_global = v; /* cross-TU WRITE target */
 }

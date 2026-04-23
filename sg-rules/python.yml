@@ -1,0 +1,13 @@
+rules:
+  - id: example-projects-python-assert-used
+    patterns:
+      - pattern: assert $X
+    message: "assert used (would be stripped in -O mode)"
+    languages: [python]
+    severity: INFO
+  - id: example-projects-python-wildcard-import
+    patterns:
+      - pattern: from $M import *
+    message: "wildcard import"
+    languages: [python]
+    severity: WARNING

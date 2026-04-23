@@ -1,0 +1,17 @@
+rules:
+  - id: example-projects-go-print
+    patterns:
+      - pattern-either:
+          - pattern: fmt.Println(...)
+          - pattern: fmt.Printf(...)
+    message: "fmt print call"
+    languages: [go]
+    severity: INFO
+  - id: example-projects-go-shadowed-err
+    patterns:
+      - pattern: |
+          err := $X
+          err = $Y
+    message: "err reassigned without checking"
+    languages: [go]
+    severity: WARNING

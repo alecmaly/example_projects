@@ -22,9 +22,23 @@ int main() {
     function1();
     recursive_function(5);
 
-    // Accessing module-level variables
+    // Accessing module-level variables (reads)
     printf("Header1 global: %s\n", get_header1_global());
     printf("Header2 global: %s\n", get_header2_global());
+
+    // Cross-TU WRITE
+    set_header1_global("rotated-from-main");
+    printf("Header1 global after: %s\n", get_header1_global());
+
+    // Function-like macro expansion
+    printf("MAX(3, 7) = %d\n", MAX(3, 7));
+    printf("label: %s\n", HEADER1_LABEL("hello"));
+
+    // Enum / union / bitfield / varargs
+    run_c_feature_demo();
+
+    // Labeled scope test cases
+    run_scope_demo_c();
 
     destroy_struct1(obj);
     return 0;

@@ -1,0 +1,5 @@
+source "https://rubygems.org"
+
+# Path gems — Bundler's way to express a monorepo dep on a sibling.
+gem "mono_shared", path: "packages/shared"
+gem "mono_utils",  path: "packages/utils"

@@ -1,0 +1,12 @@
+go 1.22
+
+use (
+    ./apps/web
+    ./apps/cli
+    ./packages/shared
+    ./packages/utils
+    ./packages/scopes_ns
+    ./packages/chain_origin
+    ./packages/chain_middle
+    ./packages/chain_deep
+)

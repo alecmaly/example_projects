@@ -1,0 +1,13 @@
+{
+  "name": "mono/web",
+  "type": "project",
+  "require": {
+    "mono/shared": "*",
+    "mono/utils":  "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mono\\Web\\": "src/"
+    }
+  }
+}

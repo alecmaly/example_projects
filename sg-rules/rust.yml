@@ -1,0 +1,16 @@
+rules:
+  - id: example-projects-rust-unwrap
+    patterns:
+      - pattern-either:
+          - pattern: $X.unwrap()
+          - pattern: $X.expect($MSG)
+    message: "unwrap/expect — consider explicit error handling"
+    languages: [rust]
+    severity: WARNING
+  - id: example-projects-rust-unsafe-block
+    patterns:
+      - pattern: |
+          unsafe { ... }
+    message: "unsafe block"
+    languages: [rust]
+    severity: INFO

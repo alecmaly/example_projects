@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Microsoft.Demo.FrontEnd</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Demo.HttpProxy.Handler" />
+    <Reference Include="Microsoft.Demo.HttpProxy.ModernHandler" />
+    <Reference Include="Microsoft.Demo.Data.Common" />
+  </ItemGroup>
+</Project>

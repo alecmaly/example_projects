@@ -1,0 +1,15 @@
+rules:
+  - id: example-projects-csharp-console-write
+    patterns:
+      - pattern-either:
+          - pattern: Console.WriteLine(...)
+          - pattern: Console.Write(...)
+    message: "Console write call"
+    languages: [csharp]
+    severity: INFO
+  - id: example-projects-csharp-task-result
+    patterns:
+      - pattern: $X.Result
+    message: "blocking .Result call on Task"
+    languages: [csharp]
+    severity: WARNING

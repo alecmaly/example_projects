@@ -1,0 +1,18 @@
+{
+  "name": "mono/root",
+  "description": "Composer monorepo with PSR-4 autoload and path repositories.",
+  "type": "project",
+  "require": {
+    "mono/shared": "*",
+    "mono/utils": "*",
+    "mono/web": "*"
+  },
+  "repositories": [
+    { "type": "path", "url": "packages/shared",  "options": { "symlink": true } },
+    { "type": "path", "url": "packages/utils",   "options": { "symlink": true } },
+    { "type": "path", "url": "apps/web",         "options": { "symlink": true } },
+    { "type": "path", "url": "apps/cli",         "options": { "symlink": true } }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

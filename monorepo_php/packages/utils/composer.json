@@ -1,0 +1,9 @@
+{
+  "name": "mono/utils",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Mono\\Utils\\": "src/"
+    }
+  }
+}

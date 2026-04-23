@@ -1,8 +1,45 @@
 # clean up .json files to ensure we are not using old data
 find . -name "*.json" -type f ! -name launch.json ! -name tsconfig.json ! -path "*/_solidity-chainlink/*" ! -path "*/_vulnserver/*"  -delete
 
-language_folders=(asm bash csharp c go java kotlin lua php powershell python ruby rust solidity typescript)
+language_folders=( \
+    # Languages with no monorepo analogue — flat fixtures retained.
+    asm bash c lua powershell \
+    # Additional single-dir language fixtures expanded from bare-bones to
+    # cover features / imports / scopes (no monorepo tooling needed at this
+    # fidelity level).
+    cpp elixir groovy haskell ocaml scala swift zig \
+    # Rust LSP-stress fixture (distinct from monorepo_rust — exercises the
+    # LSP boot/ref-map path with a minimal single-crate shape).
+    rust_lsp \
+    # Web framework coverage (React TSX, Vue SFC, Angular component, vanilla JS).
+    web \
+    # Cross-dir / decompiler / no-build-file fixtures — retained.
+    csharp_multi_dll c_multi_dir _ilspy_dump _jadx_dump \
+    # Monorepo fixtures (replaced the former flat per-language dirs in the
+    # consolidation pass — see VERIFICATION.md for the parity audit).
+    monorepo_typescript monorepo_rust monorepo_python monorepo_go \
+    monorepo_java monorepo_csharp monorepo_php monorepo_solidity \
+    monorepo_kotlin monorepo_ruby \
+)
 BASE_DIR="`pwd`/"
+
+# If sa-tool/ is present next to this script, mount its contents over the
+# image's /app/*.py so patches to the extractor apply without rebuilding the
+# 27 GB Docker image. This is the Phase 2/4/5 override mechanism described
+# in EXTRACTOR_CHANGES_APPLIED.md. Unset SA_TOOL_OVERRIDE=0 to disable.
+SA_TOOL_OVERRIDE="${SA_TOOL_OVERRIDE:-1}"
+OVERRIDE_MOUNTS=""
+if [ "$SA_TOOL_OVERRIDE" = "1" ] && [ -f "${BASE_DIR}sa-tool/1_extract_w_lsp.py" ]; then
+    for f in 1_extract_w_lsp.py 0_detect_project_roots.py 2_build_callstacks.py; do
+        if [ -f "${BASE_DIR}sa-tool/$f" ]; then
+            OVERRIDE_MOUNTS="$OVERRIDE_MOUNTS -v ${BASE_DIR}sa-tool/$f:/app/$f:ro"
+        fi
+    done
+    if [ -d "${BASE_DIR}sa-tool/modules" ]; then
+        OVERRIDE_MOUNTS="$OVERRIDE_MOUNTS -v ${BASE_DIR}sa-tool/modules:/app/modules:ro"
+    fi
+    echo "sa-tool override active: $OVERRIDE_MOUNTS"
+fi
 
 for language in "${language_folders[@]}"
 do
@@ -10,15 +47,27 @@ do
     src_dir="$BASE_DIR$language"
     cd $src_dir
 
-    # translate to csharp
-    if [ "$language" == "csharp" ]; then
-        language="c#"
-    fi
+    # translate folder name -> language identifier the extractor expects
+    case "$language" in
+        csharp_multi_dll|_ilspy_dump|monorepo_csharp) language="c#" ;;
+        _jadx_dump|monorepo_java)                     language="java" ;;
+        c_multi_dir|cpp)                              language="c" ;;   # clangd handles both .c and .cpp
+        rust_lsp|monorepo_rust)                       language="rust" ;;
+        web|monorepo_typescript)                      language="typescript" ;;
+        monorepo_python)                              language="python" ;;
+        monorepo_go)                                  language="go" ;;
+        monorepo_php)                                 language="php" ;;
+        monorepo_solidity)                            language="solidity" ;;
+        monorepo_kotlin)                              language="kotlin" ;;
+        monorepo_ruby)                                language="ruby" ;;
+        # elixir / groovy / haskell / ocaml / scala / swift / zig / asm /
+        # bash / lua / powershell use their folder name as-is.
+    esac
 
     # step 1: parse codebase
-    docker run --rm -it -v "$(pwd)":/app/output -v "$src_dir":$src_dir alecmaly/sa-tool python3 /app/1_extract_w_lsp.py -d $src_dir -l $language    
+    docker run --rm -it -v "$(pwd)":/app/output -v "$src_dir":$src_dir $OVERRIDE_MOUNTS alecmaly/sa-tool python3 /app/1_extract_w_lsp.py -d $src_dir -l $language
 
-    docker run --rm -it -v $(pwd):/app/output alecmaly/sa-tool python3 /app/2_build_callstacks.py
+    docker run --rm -it -v $(pwd):/app/output $OVERRIDE_MOUNTS alecmaly/sa-tool python3 /app/2_build_callstacks.py
 
     # Step 3: move files to .vscode for extension
     mkdir -p .vscode/ext-static-analysis/graphs

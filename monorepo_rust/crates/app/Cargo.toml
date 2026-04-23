@@ -1,0 +1,14 @@
+[package]
+name = "app"
+edition.workspace = true
+version.workspace = true
+
+# Path-dep on sibling workspace members — the canonical Rust monorepo
+# shape. No version pin; Cargo resolves in-workspace.
+[dependencies]
+shared = { path = "../shared" }
+utils  = { path = "../utils" }
+
+[[bin]]
+name = "app"
+path = "src/main.rs"

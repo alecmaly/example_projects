@@ -1,5 +1,9 @@
 MODULE1_GLOBAL="I'm global in module1"
 
+set_module1_global() {
+    MODULE1_GLOBAL="$1" # cross-file WRITE target
+}
+
 function1() {
     local LOCAL_VAR="I'm local to function1"
     echo "This is function1 from module1"

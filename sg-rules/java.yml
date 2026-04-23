@@ -1,0 +1,13 @@
+rules:
+  - id: example-projects-java-sysout
+    patterns:
+      - pattern: System.out.println(...)
+    message: "System.out.println in production code"
+    languages: [java]
+    severity: INFO
+  - id: example-projects-java-raw-thread
+    patterns:
+      - pattern: new Thread($X).start()
+    message: "raw Thread usage — prefer executor"
+    languages: [java]
+    severity: INFO

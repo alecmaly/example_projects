@@ -1,11 +1,14 @@
 section .data
     global_var db "I'm global in main", 0
     format db "%s", 10, 0
+    global shared_data           ; Phase 1: exported so functions.asm can WRITE it
+    shared_data dq 0
 
 section .text
     global main
     extern printf
     extern function1
+    extern set_shared            ; Phase 1: cross-file function import
 
 main:
     push rbp
@@ -19,6 +22,10 @@ main:
 
     ; Call function1
     call function1
+
+    ; Cross-TU data WRITE: pass global_var pointer into set_shared
+    mov rdi, global_var
+    call set_shared
 
     ; Call recursive function
     mov edi, 5

@@ -1,0 +1,14 @@
+rules:
+  - id: example-projects-solidity-tx-origin
+    patterns:
+      - pattern: tx.origin
+    message: "tx.origin used — prefer msg.sender"
+    languages: [solidity]
+    severity: ERROR
+  - id: example-projects-solidity-assembly
+    patterns:
+      - pattern: |
+          assembly { ... }
+    message: "inline assembly block"
+    languages: [solidity]
+    severity: INFO

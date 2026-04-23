@@ -1,0 +1,15 @@
+rules:
+  - id: example-projects-ts-console-log
+    patterns:
+      - pattern: console.log(...)
+    message: "console.log left in code"
+    languages: [javascript, typescript]
+    severity: INFO
+  - id: example-projects-ts-any
+    patterns:
+      - pattern-either:
+          - pattern: "function $F(...): any { ... }"
+          - pattern: ": any"
+    message: "any type used"
+    languages: [typescript]
+    severity: INFO

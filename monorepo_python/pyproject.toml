@@ -1,0 +1,6 @@
+# Root pyproject. Python has no native workspace concept, but tools
+# like uv / hatch / pdm let you declare per-package pyprojects and
+# resolve path-deps between siblings. This fixture mirrors that shape
+# so static analyzers see the real-world structure.
+[tool.uv.workspace]
+members = ["packages/app", "packages/shared", "packages/utils"]

@@ -1,0 +1,22 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Demo.Data.Common", "./Microsoft.Demo.Data.Common/Microsoft.Demo.Data.Common.csproj", "{11111111-0000-0000-0000-000000000001}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Demo.Data.Storage", "./Microsoft.Demo.Data.Storage/Microsoft.Demo.Data.Storage.csproj", "{22222222-0000-0000-0000-000000000002}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Demo.HttpProxy.Routing", "./Microsoft.Demo.HttpProxy.Routing/Microsoft.Demo.HttpProxy.Routing.csproj", "{33333333-0000-0000-0000-000000000003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Demo.HttpProxy.Handler", "./Microsoft.Demo.HttpProxy.Handler/Microsoft.Demo.HttpProxy.Handler.csproj", "{44444444-0000-0000-0000-000000000004}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Demo.HttpProxy.ModernHandler", "./Microsoft.Demo.HttpProxy.ModernHandler/Microsoft.Demo.HttpProxy.ModernHandler.csproj", "{66666666-0000-0000-0000-000000000006}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Demo.FrontEnd", "./Microsoft.Demo.FrontEnd/Microsoft.Demo.FrontEnd.csproj", "{55555555-0000-0000-0000-000000000005}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+EndGlobal

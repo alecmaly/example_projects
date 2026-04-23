@@ -5,6 +5,8 @@
 
 void function1(void);
 char* get_header2_global(void);
+void run_c_feature_demo(void);
+void run_scope_demo_c(void);
 
 // Function pointer type definition
 typedef int (*MathOperation)(int, int);

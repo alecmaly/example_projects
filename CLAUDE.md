@@ -2,20 +2,27 @@
 
 ## What this repo is
 
-A fixture testbed for the `alecmaly/sa-tool` static-analysis / LSP
-pipeline. Every directory under this repo is a target the extractor
-scans; the outputs live under `.vscode/ext-static-analysis/` per
-project and drive a VS Code extension that renders call graphs,
-variable references, scope summaries, and detector hits.
+A fixture testbed for static-analysis extractors. Every directory under
+this repo is a target the extractor scans; the outputs live under
+`.vscode/ext-static-analysis/` per project and drive a VS Code extension
+that renders call graphs, variable references, scope summaries, and
+detector hits.
+
+The current production extractor is the tree-sitter pipeline in the
+[`alecmaly/static-analysis-tooling`](https://github.com/alecmaly/static-analysis-tooling)
+repo (run with `docker run --rm -v "$PWD:$PWD" alecmaly/source-mapper
+scan "$PWD"`). The retired LSP-based predecessor (`alecmaly/sa-tool`
+image) can still be run via `scan_all.sh` for users who want a side-by-
+side diff.
 
 **This is not a buildable product.** Fixtures are written so that real
 language servers can parse and return semantic info, but the code is
 never executed in production. Syntactic correctness and shape coverage
 matter more than runtime correctness.
 
-## The pipeline
+## The pipeline (legacy LSP path — `scan_all.sh`)
 
-Entry point: `scan_all.sh`. For each folder in `language_folders`:
+For each folder in `language_folders`:
 
 1. **Extraction** — `docker run alecmaly/sa-tool python3 /app/1_extract_w_lsp.py -d <dir> -l <lang>`
    Boots the language's LSP, fetches document symbols, references, and
@@ -32,6 +39,11 @@ Entry point: `scan_all.sh`. For each folder in `language_folders`:
 `scan_all.sh` ends with `code .` per project so VS Code re-opens
 against fresh outputs.
 
+For the **current** tree-sitter pipeline, use `alecmaly/source-mapper`
+directly — it scans the same fixture dirs and emits the same
+`functions_html.json`/`function_calls.json` schema (plus
+`var_ref_map.json` instead of `.gzip`).
+
 ## Directory taxonomy
 
 | Path                           | Purpose                                                                                    |
@@ -44,7 +56,6 @@ against fresh outputs.
 | `csharp_multi_dll/`            | 3 C# dirs (A/B/C) with **no** shared `.sln`/`.csproj` — cross-dir resolution                |
 | `_ilspy_dump/`, `_jadx_dump/`, `_vulnserver/` | Decompiler output fixtures (ILSpy, JADX, Ghidra). No build files; synthetic-symbol-heavy   |
 | `c_multi_dir/`                 | C fixture split across `lib/include`, `lib/src`, `app/` with no Makefile                    |
-| `sa-tool/`                     | Extracted copies of `alecmaly/sa-tool`'s scripts. Volume-mounted over the image at scan time. See `EXTRACTOR_CHANGES_APPLIED.md` |
 | `sg-rules/`                    | Opt-in custom Semgrep rules (toggle via `--config ../sg-rules` in scan_all.sh)              |
 | `scope_check.py`               | Walks every `scopes.*` file, extracts S01–S14 markers, emits `scope_manifest.json`.         |
 
@@ -53,8 +64,6 @@ against fresh outputs.
 - `README.md` — terse list of known broken behaviors per language
 - `SCOPE_TEST_SPEC.md` — 14 canonical scope test cases (S01..S14) with per-language applicability matrix
 - `IMPORTS_COVERAGE.md` — matrix of import/export/build-config forms per language
-- `EXTRACTOR_CHANGES_APPLIED.md` — Phase 2/4/5 patches applied to `sa-tool/1_extract_w_lsp.py` via volume-mount override
-- `EXTRACTOR_CHANGES_PENDING.md` — patches proposed but deferred (Phase 2.3, 4.1, 4.3)
 - `VERIFICATION.md` — how to verify per-language parity before deleting flat fixtures
 
 ## Conventions
@@ -70,25 +79,18 @@ Each canonical scope case is labeled inline:
 `scope_manifest.json`. Use `--diff` to compare against the extractor's
 `var_ref_map.gzip`.
 
-### Patch convention for sa-tool edits
-Every change to `sa-tool/*.py` carries a `PATCH P<phase>.<num> — <title>`
-comment. See `EXTRACTOR_CHANGES_APPLIED.md` for the rationale per patch.
-
-### Override flags
-- `SA_TOOL_OVERRIDE=0` — run the Docker image's original extractor (bypass local patches)
-- `SA_DUMP_UNKNOWN_KINDS=1` — per-file dump of every LSP symbol kind encountered (debug aid for P2.1 per-language `VAR_KINDS`)
+### LSP debug flag
+- `SA_DUMP_UNKNOWN_KINDS=1` — per-file dump of every LSP symbol kind encountered (debug aid for the legacy `alecmaly/sa-tool` extractor's `VAR_KINDS` mapping)
 
 ## What NOT to do
 
 - **Do not re-introduce flat `<lang>/` fixtures for languages that have monorepos** — the consolidation pass moved all coverage into `monorepo_<lang>/`. Adding content back to the flat layout for the 10 consolidated languages would split coverage again. (The 5 flat fixtures that remain — asm/bash/c/lua/powershell — are intentional because monorepo tooling doesn't fit those languages.)
-- **Do not rebuild the Docker image.** The canonical extractor lives in `alecmaly/sa-tool:latest`; patches are applied via volume-mount, not image rebuild.
 - **Do not commit `*.json` scan outputs under `.vscode/ext-static-analysis/cache/`.** They are regenerated on every scan and bloat diffs.
 - **Do not bypass hooks / skip signing** when committing.
 - **Do not modify `_vulnserver/*.json` or `_solidity-chainlink/*` or `_solidity_gte-perps/*`** — they are excluded from the cleanup step of `scan_all.sh` on purpose.
 
 ## Open work
 
-- Extractor Phases P2.3, P4.1, P4.3 (see `EXTRACTOR_CHANGES_PENDING.md`)
 - **Monorepo consolidation** — completed. Flat `<lang>/` dirs fully removed for the 10 consolidated languages (python, typescript, rust, go, java, csharp, php, solidity, kotlin, ruby).
 - **Expansion round** — completed. `cpp/`, `elixir/`, `groovy/`, `haskell/`, `ocaml/`, `scala/`, `swift/`, `zig/`, `web/`, `rust_lsp/` now carry features / imports / scopes coverage (see `VERIFICATION.md` round 4).
 - Maven multi-module fixture (Gradle already covered).

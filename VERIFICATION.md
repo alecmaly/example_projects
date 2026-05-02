@@ -76,7 +76,7 @@ site etc. without losing coverage).
 ### 2. Scan pipeline runs cleanly
 
 ```bash
-SA_TOOL_OVERRIDE=1 ./scan_all.sh 2>&1 | tee scan.log
+./scan_all.sh 2>&1 | tee scan.log
 ```
 
 For each `monorepo_<lang>/`, verify:
@@ -150,10 +150,9 @@ Recommended order (lowest risk first):
 
 Done: CLAUDE.md, scope-marker manifest showing near-parity (303 →
 537 markers while flat existed, now 302 after deletion), per-language
-ports committed to working tree, scope harness still green, sa-tool
-extractor unchanged and still parses, **advanced-feature audit
-round** complete, **flat source deleted** after gauntlet pass (see
-"Deletion log" below).
+ports committed to working tree, scope harness still green, extractor
+unchanged and still parses, **advanced-feature audit round** complete,
+**flat source deleted** after gauntlet pass (see "Deletion log" below).
 
 Not done: running the full `scan_all.sh` end-to-end against each
 monorepo and diffing its `var_ref_map.gzip` against the flat output.
@@ -299,17 +298,13 @@ a single-file bare-bones fixture. Expanded in this round:
 
 ### Extractor registration updates
 
-Two small patches to `sa-tool/1_extract_w_lsp.py` (volume-mounted, not
-image-rebuilt):
-
-- **PATCH P6.1** — Swift registered in `lanaguage_defaults_map`
-  (`sourcekit-lsp`). Harmless if the Docker image doesn't have a
-  Swift toolchain installed; Swift files just won't auto-scan.
-- **PATCH P6.2** — TypeScript extension list widened to include
-  `.jsx`, `.vue`, `.mjs`, `.cjs`. `.vue` routes to
-  `typescript-language-server` which parses `<script setup lang="ts">`
-  blocks by filename; full template analysis still needs volar (not
-  shipped in the image).
+Two small patches were applied to the legacy `alecmaly/sa-tool`
+LSP extractor during the consolidation (Swift / `sourcekit-lsp`
+registration; TypeScript extension list widened to `.jsx`/`.vue`/
+`.mjs`/`.cjs`). They lived as volume-mounted overrides under the
+former `sa-tool/` directory, which has since been removed — the
+current tree-sitter pipeline (`alecmaly/source-mapper`) handles
+both languages natively in `code-parser/src/ts_modules/`.
 
 ### scan_all.sh updates
 

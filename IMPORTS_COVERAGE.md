@@ -83,9 +83,9 @@ production codebase.
 
 ## Transitive re-export chains (T1)
 
-Each language now carries a 3-level transitive chain so the LSP /
-sa-tool must follow `consumer → chain_deep → chain_middle →
-chain_origin` to resolve a symbol back to its definition. Markers:
+Each language now carries a 3-level transitive chain so the extractor
+must follow `consumer → chain_deep → chain_middle → chain_origin` to
+resolve a symbol back to its definition. Markers:
 `T1.origin.def`, `T1.middle.reexport`, `T1.deep.reexport`,
 `T1.consumer.read`.
 

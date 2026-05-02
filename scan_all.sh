@@ -23,23 +23,13 @@ language_folders=( \
 )
 BASE_DIR="`pwd`/"
 
-# If sa-tool/ is present next to this script, mount its contents over the
-# image's /app/*.py so patches to the extractor apply without rebuilding the
-# 27 GB Docker image. This is the Phase 2/4/5 override mechanism described
-# in EXTRACTOR_CHANGES_APPLIED.md. Unset SA_TOOL_OVERRIDE=0 to disable.
-SA_TOOL_OVERRIDE="${SA_TOOL_OVERRIDE:-1}"
-OVERRIDE_MOUNTS=""
-if [ "$SA_TOOL_OVERRIDE" = "1" ] && [ -f "${BASE_DIR}sa-tool/1_extract_w_lsp.py" ]; then
-    for f in 1_extract_w_lsp.py 0_detect_project_roots.py 2_build_callstacks.py; do
-        if [ -f "${BASE_DIR}sa-tool/$f" ]; then
-            OVERRIDE_MOUNTS="$OVERRIDE_MOUNTS -v ${BASE_DIR}sa-tool/$f:/app/$f:ro"
-        fi
-    done
-    if [ -d "${BASE_DIR}sa-tool/modules" ]; then
-        OVERRIDE_MOUNTS="$OVERRIDE_MOUNTS -v ${BASE_DIR}sa-tool/modules:/app/modules:ro"
-    fi
-    echo "sa-tool override active: $OVERRIDE_MOUNTS"
-fi
+# This driver runs the predecessor LSP-based extractor in the
+# ``alecmaly/sa-tool`` Docker image. The current production pipeline
+# uses tree-sitter — see ``alecmaly/source-mapper`` (built from the
+# alecmaly/static-analysis-tooling repo) and run with
+# ``docker run --rm -v "$PWD:$PWD" alecmaly/source-mapper scan "$PWD"``.
+# This script is kept for users who still want LSP-pipeline output
+# against these fixtures, or for diff'ing the two extractors.
 
 for language in "${language_folders[@]}"
 do
@@ -65,9 +55,9 @@ do
     esac
 
     # step 1: parse codebase
-    docker run --rm -it -v "$(pwd)":/app/output -v "$src_dir":$src_dir $OVERRIDE_MOUNTS alecmaly/sa-tool python3 /app/1_extract_w_lsp.py -d $src_dir -l $language
+    docker run --rm -it -v "$(pwd)":/app/output -v "$src_dir":$src_dir alecmaly/sa-tool python3 /app/1_extract_w_lsp.py -d $src_dir -l $language
 
-    docker run --rm -it -v $(pwd):/app/output $OVERRIDE_MOUNTS alecmaly/sa-tool python3 /app/2_build_callstacks.py
+    docker run --rm -it -v $(pwd):/app/output alecmaly/sa-tool python3 /app/2_build_callstacks.py
 
     # Step 3: move files to .vscode for extension
     mkdir -p .vscode/ext-static-analysis/graphs

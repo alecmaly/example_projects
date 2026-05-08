@@ -54,31 +54,26 @@ do
         # bash / lua / powershell use their folder name as-is.
     esac
 
-    # step 1: parse codebase
-    docker run --rm -it -v "$(pwd)":/app/output -v "$src_dir":$src_dir alecmaly/sa-tool python3 /app/1_extract_w_lsp.py -d $src_dir -l $language
-
-    docker run --rm -it -v $(pwd):/app/output alecmaly/sa-tool python3 /app/2_build_callstacks.py
-
-    # Step 3: move files to .vscode for extension
-    mkdir -p .vscode/ext-static-analysis/graphs
-    mv ./.vscode/ext-static-analysis/cache/functions_html.json ./.vscode/ext-static-analysis/functions_html.json
-    mv ./.vscode/ext-static-analysis/cache/decorations.json ./.vscode/ext-static-analysis/decorations.json
-    mv ./.vscode/ext-static-analysis/cache/callstacks.json ./.vscode/ext-static-analysis/callstacks.json
-    mv ./.vscode/ext-static-analysis/cache/scope_summaries_html.json ./.vscode/ext-static-analysis/scope_summaries_html.json
-    mv ./.vscode/ext-static-analysis/cache/inheritance_graph.json ./.vscode/ext-static-analysis/graphs/inheritance_graph.json
+    # step 1: parse codebase. The unified ``scan`` entrypoint
+    # auto-detects input shape and runs the right extract +
+    # postprocess pipeline. ``_process_static_analysis.sh`` (called
+    # by scan) handles the cache → top-level file copies the
+    # legacy two-step (``1_extract_w_lsp.py`` + ``2_build_callstacks.py``)
+    # used to do manually here.
+    docker run --rm -it -v "$src_dir":"$src_dir" alecmaly/source-mapper scan "$src_dir"
 
 
-    src_dir=`pwd` && docker run --rm -it -v $(pwd):/app/output -v "$src_dir":"$src_dir" alecmaly/sa-tool semgrep scan --exclude sg-rules --json --config auto --json-output=semgrep.json # --config ../sg-rules  # removing custom rules to increase speed
-    src_dir=`pwd` && docker run --rm -it -v $(pwd):/app/output -v "$src_dir":"$src_dir" alecmaly/sa-tool python3 /app/semgrep-to-detector-results.py -b "$src_dir" 
+    src_dir=`pwd` && docker run --rm -it -v ~/.semgrep:/root/.semgrep -v $(pwd):/app/output -v "$src_dir":"$src_dir" alecmaly/source-mapper semgrep scan --exclude sg-rules --no-git-ignore --json --config /app/sg-rules --config auto --json-output=semgrep.json "$src_dir"
+    src_dir=`pwd` && docker run --rm -it -v $(pwd):/app/output -v "$src_dir":"$src_dir" alecmaly/source-mapper python3 /app/postprocess/detectors_to_results.py -s semgrep -b "$src_dir" -c "semgrep"
 
 
     ## Grep to Detectors:
             # Example: adding if and loops to detectors
-    grep -rnEI --exclude-dir={.vscode,.git,node_modules,.json,target} "\bif\b" . | awk -F: '{print $1 ":" $2 ":" index($0, $4) ":" substr($0, index($0, $3))}' > grep-output.txt
-    src_dir=`pwd` && docker run --rm -it -v $(pwd):/app/output -v "$src_dir":"$src_dir" alecmaly/sa-tool python3 /app/grep-to-detector-results.py -b "$src_dir" -c "grep-if statements" -a
+    src_dir=`pwd` && docker run --rm -it -v $(pwd):/app/output -v "$src_dir":"$src_dir" alecmaly/source-mapper sh -c "cd \"$src_dir\" && grep -rnEI --exclude-dir={.vscode,.git,node_modules,.json,target} '\bif\b' . | awk -F: '{print \$1\":\"\$2\":\"index(\$0,\$4)\":\"substr(\$0,index(\$0,\$3))}'" > grep-output.txt
+    src_dir=`pwd` && docker run --rm -it -v $(pwd):/app/output -v "$src_dir":"$src_dir" alecmaly/source-mapper python3 /app/postprocess/detectors_to_results.py -s grep -b "$src_dir" -c "grep-if statements" -a
 
-    grep -rnEI --exclude-dir={.vscode,.git,node_modules,.json,target} "\b(while|for|until|do)\b" . | awk -F: '{print $1 ":" $2 ":" index($0, $4) ":" substr($0, index($0, $3))}' > grep-output.txt
-    src_dir=`pwd` && docker run --rm -it -v $(pwd):/app/output -v "$src_dir":"$src_dir" alecmaly/sa-tool python3 /app/grep-to-detector-results.py -b "$src_dir" -c "grep-loops" -a
+    src_dir=`pwd` && docker run --rm -it -v $(pwd):/app/output -v "$src_dir":"$src_dir" alecmaly/source-mapper sh -c "cd \"$src_dir\" && grep -rnEI --exclude-dir={.vscode,.git,node_modules,.json,target} '\b(while|for|until|do)\b' . | awk -F: '{print \$1\":\"\$2\":\"index(\$0,\$4)\":\"substr(\$0,index(\$0,\$3))}'" > grep-output.txt
+    src_dir=`pwd` && docker run --rm -it -v $(pwd):/app/output -v "$src_dir":"$src_dir" alecmaly/source-mapper python3 /app/postprocess/detectors_to_results.py -s grep -b "$src_dir" -c "grep-loops" -a
 
     # rust's was very large
     rm grep-output.txt

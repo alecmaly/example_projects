@@ -32,9 +32,12 @@ For each folder in `language_folders`:
    into callstacks and scope summaries. Output: `callstacks.json`,
    `scope_summaries_html.json`, `functions_html.json`,
    `decorations.json`, `inheritance_graph.json`.
-3. **Detectors** — `semgrep scan` → `semgrep-to-detector-results.py`,
-   `grep-to-detector-results.py` for if / loop detectors. Output:
-   `detector-results.json` under `.vscode/ext-detectors/`.
+3. **Detectors** — `semgrep scan` →
+   `detectors_to_results.py -s semgrep` (post-migration the three
+   per-tool converters — `semgrep-to-detector-results.py`,
+   `grep-to-detector-results.py`, `ripgrep-to-detector-results.py`
+   — were consolidated into a single tool with a `--source` flag).
+   Output: `detector-results.json` under `.vscode/ext-detectors/`.
 
 `scan_all.sh` ends with `code .` per project so VS Code re-opens
 against fresh outputs.

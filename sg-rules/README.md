@@ -2,10 +2,11 @@
 
 Opt-in custom Semgrep rules for the example-projects scan pipeline.
 
-`scan_all.sh` currently invokes `semgrep scan --config auto` and has
-`--config ../sg-rules` commented out for speed. To exercise these rules,
-uncomment that line in `scan_all.sh`.
+`scan_all.sh` invokes `semgrep scan --config /app/sg-rules --config auto`
+(the bundled local rule pack inside the Docker image, plus registry
+auto-detect). To exercise these example-project rules instead, swap
+`/app/sg-rules` for the path to this directory.
 
 One rules file per language, each with a couple of representative
-patterns so the `semgrep-to-detector-results.py` stage is actually
-producing output the extractor has to consume.
+patterns so the `detectors_to_results.py -s semgrep` converter stage
+is actually producing output the VS Code extension has to consume.

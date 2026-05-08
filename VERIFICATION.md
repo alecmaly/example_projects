@@ -298,7 +298,7 @@ a single-file bare-bones fixture. Expanded in this round:
 
 ### Extractor registration updates
 
-Two small patches were applied to the legacy `alecmaly/sa-tool`
+Two small patches were applied to the legacy `alecmaly/source-mapper`
 LSP extractor during the consolidation (Swift / `sourcekit-lsp`
 registration; TypeScript extension list widened to `.jsx`/`.vue`/
 `.mjs`/`.cjs`). They lived as volume-mounted overrides under the

@@ -8,7 +8,7 @@ semantic info, but the code is never executed in production.
 The current production extractor is the tree-sitter pipeline in
 [`alecmaly/static-analysis-tooling`](https://github.com/alecmaly/static-analysis-tooling)
 (`alecmaly/source-mapper` Docker image). The legacy LSP-based extractor
-(`alecmaly/sa-tool` image) can still be run via `scan_all.sh` for diff'ing.
+(`alecmaly/source-mapper` image) can still be run via `scan_all.sh` for diff'ing.
 
 For the project goal, pipeline shape, directory taxonomy, marker
 conventions, and debug flags, see **[CLAUDE.md](./CLAUDE.md)**.
@@ -58,6 +58,6 @@ Historical issues — still valid flags the extractor accepts:
 
 Var-tracking issues seen in the legacy LSP layout for Kotlin, Lua,
 Ruby, Solidity, Python, PowerShell were addressed via patches to the
-`alecmaly/sa-tool` extractor. The current tree-sitter pipeline
+`alecmaly/source-mapper` extractor. The current tree-sitter pipeline
 (`alecmaly/source-mapper`) handles them natively in its per-language
 modules under `code-parser/src/ts_modules/`.

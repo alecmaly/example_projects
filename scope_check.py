@@ -5,7 +5,7 @@ Walks every `scopes.*` file under the repo root, extracts the
 `S<NN>.<role>[.kind]` markers embedded in comments, and produces a
 manifest JSON describing the expected `var_ref_map` entries.
 
-The companion extractor (`alecmaly/sa-tool` / `1_extract_w_lsp.py`)
+The companion extractor (`alecmaly/source-mapper` / `1_extract_w_lsp.py`)
 writes `var_ref_map.gzip` into each language's
 `.vscode/ext-static-analysis/cache/` directory. This script can later
 be extended to diff the manifest against that output; for now it just

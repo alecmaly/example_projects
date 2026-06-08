@@ -24,7 +24,7 @@ language_folders=( \
 BASE_DIR="`pwd`/"
 
 # This driver runs the predecessor LSP-based extractor in the
-# ``alecmaly/sa-tool`` Docker image. The current production pipeline
+# ``alecmaly/source-mapper`` Docker image. The current production pipeline
 # uses tree-sitter — see ``alecmaly/source-mapper`` (built from the
 # alecmaly/static-analysis-tooling repo) and run with
 # ``docker run --rm -v "$PWD:$PWD" alecmaly/source-mapper scan "$PWD"``.

@@ -11,7 +11,7 @@ detector hits.
 The current production extractor is the tree-sitter pipeline in the
 [`alecmaly/static-analysis-tooling`](https://github.com/alecmaly/static-analysis-tooling)
 repo (run with `docker run --rm -v "$PWD:$PWD" alecmaly/source-mapper
-scan "$PWD"`). The retired LSP-based predecessor (`alecmaly/sa-tool`
+scan "$PWD"`). The retired LSP-based predecessor (`alecmaly/source-mapper`
 image) can still be run via `scan_all.sh` for users who want a side-by-
 side diff.
 
@@ -24,7 +24,7 @@ matter more than runtime correctness.
 
 For each folder in `language_folders`:
 
-1. **Extraction** — `docker run alecmaly/sa-tool python3 /app/1_extract_w_lsp.py -d <dir> -l <lang>`
+1. **Extraction** — `docker run alecmaly/source-mapper python3 /app/1_extract_w_lsp.py -d <dir> -l <lang>`
    Boots the language's LSP, fetches document symbols, references, and
    call hierarchies. Output: `*/var_ref_map.gzip`, `function_calls.json`,
    `seen_files.json`, `class_inheritance.json`.
@@ -83,7 +83,7 @@ Each canonical scope case is labeled inline:
 `var_ref_map.gzip`.
 
 ### LSP debug flag
-- `SA_DUMP_UNKNOWN_KINDS=1` — per-file dump of every LSP symbol kind encountered (debug aid for the legacy `alecmaly/sa-tool` extractor's `VAR_KINDS` mapping)
+- `SA_DUMP_UNKNOWN_KINDS=1` — per-file dump of every LSP symbol kind encountered (debug aid for the legacy `alecmaly/source-mapper` extractor's `VAR_KINDS` mapping)
 
 ## What NOT to do
 
